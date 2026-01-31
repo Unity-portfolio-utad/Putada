@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3414622872946770796}
   - component: {fileID: 1341643548878734989}
   - component: {fileID: 4369312710657109977}
+  - component: {fileID: -1683489950017520049}
+  - component: {fileID: -1119792957172262766}
   m_Layer: 0
   m_Name: Mirror
   m_TagString: Untagged
@@ -90,3 +92,38 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &-1683489950017520049
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691762894605526938}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.598511, y: 0.95676595, z: 0.51876354}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-1119792957172262766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691762894605526938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b973ab2ce114f058b8ea41665f9a193, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MirrorInteraction
+  playerStatus: {fileID: 0}
+  disabledMessage: Desde la enfermedad del caracol no te puedes ni mirar a la cara...
