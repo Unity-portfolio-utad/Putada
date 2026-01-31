@@ -10,12 +10,17 @@ public class Armario : MonoBehaviour
     [SerializeField]
     ObjetoRecogible[] recogibles;
 
+
+    [SerializeField]
+    GameObject ghostPre;
+
+    private GameObject ghost;
+
     void Start()
     {
         for (int i = 0; i < recogibles.Length; i++)
         {
             objetos.Add(recogibles[i].itemType, recogibles[i].gameObject);
-            Debug.Log(i);
         }
     }
 
@@ -29,6 +34,11 @@ public class Armario : MonoBehaviour
     {
         if (objetos.ContainsKey(item))
         {
+            ghost = GameObject.Instantiate(ghostPre);
+            ghost.transform.position = objetos[item].transform.position;
+
+
+
             objetos[item].SetActive(false);
         }
     }
@@ -37,6 +47,9 @@ public class Armario : MonoBehaviour
     {
         if (objetos.ContainsKey(item))
         {
+            if (ghost != null) GameObject.Destroy(ghost);
+            ghost = null;
+
             objetos[item].SetActive(true);
         }   
     }

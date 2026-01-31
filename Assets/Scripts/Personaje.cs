@@ -42,6 +42,13 @@ public class Personaje : MonoBehaviour
             armario.showItem(activeItem);
         }
 
+        if (activeItem == item) {
+            armario.showItem(activeItem);
+            activeItem = Items.NULL;
+
+            return;
+        }
+
         activeItem = item;
         armario.hideItem(activeItem);
     }
