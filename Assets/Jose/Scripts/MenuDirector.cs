@@ -142,6 +142,12 @@ public class MenuDirector : MonoBehaviour
         Cursor.visible = true;
 
         busy = false;
+        
+        // 6) Iniciar el ciclo de días
+        if (DayCycleOrchestrator.Instance != null)
+        {
+            DayCycleOrchestrator.Instance.StartGame();
+        }
     }
 
     void SetGameplayEnabled(bool enabled)
