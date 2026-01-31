@@ -76,3 +76,11 @@ public class Patient : BaseHuman
         willDieAtEndOfDay = false;
     }
 }
+
+
+
+
+
+    public enum TipoSintoma { A_Calor, B_Flujos, C_Cuerpo, D_Dolor, E_Conducta }
+
+    public enum Enfermedades { CATARRO, SARPULLIDO, RAMAS_BRAZOS, OTITIS, OJOS_CARACOL, LEPRA, BICHOS_OJOS }
