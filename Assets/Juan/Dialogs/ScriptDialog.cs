@@ -2,14 +2,21 @@ using UnityEngine;
 using System.Collections;
 using TMPro;
 using UnityEngine.InputSystem;
+
 public class ScriptDialog : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
-     public string[] lines;
+    private string[] lines;
     public float textSpeed;
+    public TextAsset archivoDialog;
     private int index;
+    
     void Start()
     {
+        if (archivoDialog != null)
+        {
+            lines = archivoDialog.text.Split(new char[] {'\n', '\r' }, System.StringSplitOptions.RemoveEmptyEntries);
+        }
        textComponent.text = string.Empty;
        comenzarDialogo();
     }
