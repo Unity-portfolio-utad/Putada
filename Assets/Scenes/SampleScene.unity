@@ -366,6 +366,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 106944908}
     m_Modifications:
+    - target: {fileID: -1119792957172262766, guid: 79a1b53c03e96ca44acb75c4f4618991, type: 3}
+      propertyPath: playerStatus
+      value: 
+      objectReference: {fileID: 1883996689}
+    - target: {fileID: -1119792957172262766, guid: 79a1b53c03e96ca44acb75c4f4618991, type: 3}
+      propertyPath: disabledMessage
+      value: ' Since the SnailEyes disease I cannot even look at my own face...'
+      objectReference: {fileID: 0}
     - target: {fileID: 1691762894605526938, guid: 79a1b53c03e96ca44acb75c4f4618991, type: 3}
       propertyPath: m_Name
       value: Mirror
@@ -2087,7 +2095,7 @@ GameObject:
   - component: {fileID: 1883996682}
   - component: {fileID: 1883996686}
   - component: {fileID: 1883996688}
-  - component: {fileID: 1883996687}
+  - component: {fileID: 1883996689}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2224,7 +2232,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Personaje
   armario: {fileID: 5540939375001227113}
---- !u!114 &1883996687
+--- !u!114 &1883996688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883996680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 960c9893570648c9b96efcb2b2281671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHuman
+  activeDiseases: []
+  status: {fileID: 0}
+  lastDeathCause: 0
+--- !u!114 &1883996689
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2242,8 +2265,7 @@ MonoBehaviour:
   scratchAudioSource: {fileID: 0}
   scratchClip: {fileID: 0}
   mirrorObject: {fileID: 461999930}
-  topShelfObjects:
-  - {fileID: 0}
+  topShelfObjects: []
   cameraBlur: 0
   fisheye: 0
   breathingNoise: 0
@@ -2252,21 +2274,6 @@ MonoBehaviour:
   topShelfDisabled: 0
   scratchEnabled: 0
   scratchInterval: 10
---- !u!114 &1883996688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1883996680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 960c9893570648c9b96efcb2b2281671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerHuman
-  activeDiseases: []
-  status: {fileID: 0}
-  lastDeathCause: 0
 --- !u!1 &1909522452
 GameObject:
   m_ObjectHideFlags: 0
