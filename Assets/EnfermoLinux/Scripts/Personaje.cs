@@ -24,7 +24,7 @@ public class Personaje : MonoBehaviour
     {
         if (armario == null)
         {
-            armario = GameObject.Find("Armario").GetComponent<Armario>();
+            armario = GameObject.Find("estanteria").GetComponent<Armario>();
         }
     }
 
