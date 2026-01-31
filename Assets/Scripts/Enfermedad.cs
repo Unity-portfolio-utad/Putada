@@ -11,7 +11,7 @@ public class Enfermedad : MonoBehaviour
 
     public Enfermedades[] leves;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // Start is called once beforez the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         enfermedades[Enfermedades.CATARRO] = new TipoSintoma[] { TipoSintoma.A_Calor, TipoSintoma.B_Flujos, TipoSintoma.D_Dolor };
