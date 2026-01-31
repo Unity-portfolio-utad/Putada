@@ -1171,7 +1171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3b2eb5046e9fa10cb38daf994977eaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Personaje
-  armario: {fileID: 0}
+  armario: {fileID: 2081299529}
 --- !u!1 &1995337225
 GameObject:
   m_ObjectHideFlags: 0
