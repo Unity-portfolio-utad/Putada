@@ -28,7 +28,7 @@ public class ObjetoRecogible : MonoBehaviour
 
     public void OnMouseDown()
     {
-        Debug.Log("Hola");
         personaje.setActiveItem(itemType);
+        Debug.Log(itemType);
     }
 }
