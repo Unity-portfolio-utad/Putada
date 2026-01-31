@@ -129,12 +129,13 @@ public class MenuDirector : MonoBehaviour
             playerRoot.SetPositionAndRotation(gamePlayerPoint.position, targetRot);
         }
 
+        // 5) Activar gameplay
+        SetGameplayEnabled(true);
+        
         // 4) Fade in desde negro
         yield return Fade(fadeGroup, 1f, 0f, fadeFromBlackTime);
         if (fadeGroup) fadeGroup.blocksRaycasts = false;
 
-        // 5) Activar gameplay
-        SetGameplayEnabled(true);
 
         // Cursor libre y visible (como pediste)
         Cursor.lockState = CursorLockMode.None;
