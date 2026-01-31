@@ -19,6 +19,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     public enum TipoSintoma { A_Calor, B_Flujos, C_Cuerpo, D_Dolor, E_Conducta }
 
+    public enum Enfermedades { CATARRO, SARPULLIDO, RAMAS_BRAZOS, OTITIS, OJOS_CARACOL, LEPRA, BICHOS_OJOS }
+
     [System.Serializable]
     public struct SintomaData
     {
@@ -29,7 +31,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     [System.Serializable]
     public struct Enfermedad
     {
-        public string nombre;
+        public Enfermedades nombre;
         public TipoSintoma[] combinacion;
     }
 
