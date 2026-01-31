@@ -9,6 +9,8 @@ public class Enfermedad : MonoBehaviour
 
     Dictionary<Enfermedades, TipoSintoma[]> enfermedades = new Dictionary<Enfermedades, TipoSintoma[]>();
 
+    public Enfermedades[] leves;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

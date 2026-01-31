@@ -10,6 +10,9 @@ public class ObjetoRecogible : MonoBehaviour
     [SerializeField]
     private Personaje personaje;
 
+    [SerializeField]
+    private GameObject objeto;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,7 +25,7 @@ public class ObjetoRecogible : MonoBehaviour
 
     void Update()
     {
-        
+        transform.LookAt(objeto.transform.position);
     }
 
 
