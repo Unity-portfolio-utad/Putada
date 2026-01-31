@@ -5,15 +5,15 @@ using TMPro;
 using UnityEngine.InputSystem;
 
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class ScriptDialog : MonoBehaviour
 {
-    public TextMeshProUGUI textComponent;
+    public TextMeshPro textComponent;
     public float textSpeed = 0.05f;
 
     public List<SintomaData> baseDeDatosSintomas;
 
-    public List<Enfermedad.Enfermedades> enfermedadesGraves;
-    public List<Enfermedad.Enfermedades> enfermedadesLeves;
+    private List<Enfermedad.Enfermedades> enfermedadesGraves;
+    private List<Enfermedad.Enfermedades> enfermedadesLeves;
 
     public bool leve = false; 
     public Enfermedad.Enfermedades nakim; 
@@ -35,11 +35,10 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
  
 
-    void Start()
+    void Awake()
     {
         textComponent.text = string.Empty;
         GenerarDialogoEnfermedad();
-        comenzarDialogo();
     }
 
     void Update()
@@ -127,7 +126,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
         }
     }
 
-    void comenzarDialogo()
+    public void comenzarDialogo()
     {
         index = 0;
         if (lines.Count > 0)
@@ -143,7 +142,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
         }
     }
 
-    void NextLine()
+    public void NextLine()
     {
         if (index < lines.Count - 1)
         {
