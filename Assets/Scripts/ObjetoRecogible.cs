@@ -25,6 +25,7 @@ public class ObjetoRecogible : MonoBehaviour
 
     void Update()
     {
+        if (objeto == null) return;
         transform.LookAt(objeto.transform.position);
     }
 
