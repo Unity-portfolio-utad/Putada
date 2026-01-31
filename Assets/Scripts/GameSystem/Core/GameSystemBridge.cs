@@ -42,19 +42,19 @@ public class GameSystemBridge : MonoBehaviour
     {
         // Auto-encontrar referencias si no están asignadas
         if (personaje == null)
-            personaje = FindObjectOfType<Personaje>();
+            personaje = FindFirstObjectByType<Personaje>();
         
         if (armario == null)
-            armario = FindObjectOfType<Armario>();
+            armario = FindFirstObjectByType<Armario>();
             
         if (orchestrator == null)
             orchestrator = DayCycleOrchestrator.Instance;
             
         if (playerHuman == null)
-            playerHuman = FindObjectOfType<PlayerHuman>();
+            playerHuman = FindFirstObjectByType<PlayerHuman>();
             
         if (playerStatus == null)
-            playerStatus = FindObjectOfType<PlayerStatus>();
+            playerStatus = FindFirstObjectByType<PlayerStatus>();
     }
 
     /// <summary>
