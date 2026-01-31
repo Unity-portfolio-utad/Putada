@@ -64,8 +64,7 @@ MonoBehaviour:
     guaranteedPatientIndex: 0
     tutorialText: 
     isTutorialDay: 0
-  deathMessageUntreatedSevere: HAS MUERTO POR UNA ENFERMEDAD GRAVE NO TRATADA. YOU
-    DIED DUE TO A SEVERE DISEASE
+  deathMessageUntreatedSevere: YOU DIED DUE TO A SEVERE DISEASE
   deathMessageMildOverflow: 'YOU DIED DUE TO MILD DISEASES '
   deathMessageBodyBugs: 'END OF GAME
 

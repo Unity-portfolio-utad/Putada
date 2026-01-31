@@ -32,10 +32,10 @@ public class DayCycleOrchestrator : MonoBehaviour
     [Tooltip("Prefab del paciente")]
     public Patient patientPrefab;
     
-    [Tooltip("Punto de spawn de pacientes")]
+    [Tooltip("Punto de spawn de pacientes (entrada)")]
     public Transform patientSpawnPoint;
     
-    [Tooltip("Punto de salida de pacientes")]
+    [Tooltip("Punto de tratamiento / llegada del paciente (salida)")]
     public Transform patientExitPoint;
 
     [Header("UI")]
@@ -43,10 +43,18 @@ public class DayCycleOrchestrator : MonoBehaviour
     public CanvasGroup fadeGroup;
 
     [Header("Tiempos")]
-    public float patientEnterTime = 1f;
-    public float patientExitTime = 0.8f;
+    public float patientEnterTime = 1f; // antigua espera
+    public float patientExitTime = 0.8f; // antigua espera
     public float fadeToBlackTime = 0.6f;
     public float fadeFromBlackTime = 0.6f;
+
+    // Duración del movimiento de entrada/salida (en segundos)
+    [Tooltip("Tiempo en segundos que tarda en moverse el paciente entre puntos (entrada -> tratamiento) ")]
+    public float patientMoveDuration = 3f;
+
+    // Tiempo máximo que espera el paciente para ser tratado en la camilla
+    [Tooltip("Tiempo máximo que espera el paciente estacionado para recibir tratamiento antes de irse (0 = esperar indefinido)")]
+    public float patientTreatmentTimeout = 20f;
 
     // ==================== ESTADO ====================
     
@@ -66,7 +74,7 @@ public class DayCycleOrchestrator : MonoBehaviour
     public int DeadPatientsToday => deadPatientsToday;
     public bool IsProcessing => isProcessing;
     public Patient CurrentPatient => currentPatient;
-
+    
     void Awake()
     {
         if (Instance == null)
@@ -108,12 +116,11 @@ public class DayCycleOrchestrator : MonoBehaviour
     /// </summary>
     public void TreatCurrentPatient(CureId cure)
     {
-        if (currentPatient == null || isProcessing) return;
+        if (currentPatient == null) return; // permitimos tratamiento incluso cuando no está en movimiento
         
+        // Aplicar cura al paciente activo; no ocultamos inmediatamente: se esperará al movimiento de salida
         currentPatient.ApplyCure(cure);
         Debug.Log($"Paciente tratado con {cure}");
-        
-        StartCoroutine(DismissPatientAndNext());
     }
 
     /// <summary>
@@ -266,13 +273,15 @@ public class DayCycleOrchestrator : MonoBehaviour
     }
 
     /// <summary>
-    /// Trae al siguiente paciente.
+    /// Trae al siguiente paciente, mueve desde el punto de entrada al punto de tratamiento en patientMoveDuration,
+    /// espera a que sea tratado (o timeout) y luego lo mueve de vuelta al punto inicial.
     /// </summary>
     IEnumerator BringNextPatient()
     {
+        // Cada vez que entramos, marcamos que estamos procesando el flujo de movimiento
         isProcessing = true;
         currentPatientIndex++;
-        
+
         if (currentPatientIndex >= todaysPatients.Count)
         {
             // No más pacientes: ir al autoexamen
@@ -280,35 +289,99 @@ public class DayCycleOrchestrator : MonoBehaviour
             StartSelfExamPhase();
             yield break;
         }
-        
+
         currentPatient = todaysPatients[currentPatientIndex];
-        
+
+        // Posicionar en punto de entrada inicial
         if (patientSpawnPoint != null)
         {
             currentPatient.transform.position = patientSpawnPoint.position;
             currentPatient.transform.rotation = patientSpawnPoint.rotation;
         }
-        
+        else
+        {
+            Debug.LogWarning("DayCycleOrchestrator: patientSpawnPoint no asignado");
+        }
+
         currentPatient.gameObject.SetActive(true);
+
+        // Mover desde entrada al punto de tratamiento (patientExitPoint) en patientMoveDuration segundos
+        if (patientExitPoint != null)
+        {
+            yield return StartCoroutine(MoveTransform(currentPatient.transform, patientSpawnPoint.position, patientExitPoint.position, patientMoveDuration));
+        }
+        else
+        {
+            Debug.LogWarning("DayCycleOrchestrator: patientExitPoint no asignado");
+        }
+
+        // LLegó a la camilla; permitir interacción/tratamiento
+        isProcessing = false;
+
+        Debug.Log($"Paciente {currentPatientIndex + 1}/{todaysPatients.Count} en tratamiento");
+
+        // Esperar que sea tratado o que caduque el tiempo de espera (si timeout <= 0 espera indefinido)
+        float timer = 0f;
+        bool treated = false;
+
+        while (true)
+        {
+            // comprobar si alguna enfermedad del paciente fue marcada como tratada hoy
+            foreach (var d in currentPatient.Diseases)
+            {
+                if (d.treatedToday)
+                {
+                    treated = true;
+                    break;
+                }
+            }
+
+            if (treated) break;
+
+            if (patientTreatmentTimeout > 0f)
+            {
+                timer += Time.deltaTime;
+                if (timer >= patientTreatmentTimeout)
+                {
+                    Debug.Log($"Paciente {currentPatientIndex + 1} no fue tratado en el tiempo límite y se va sin tratamiento");
+                    break;
+                }
+            }
+
+            yield return null;
+        }
+
+        // Volver a marcar procesamiento (movimiento de salida)
+        isProcessing = true;
+
+        // Mover de vuelta desde la camilla al punto de entrada en patientMoveDuration segundos
+        if (patientSpawnPoint != null)
+        {
+            yield return StartCoroutine(MoveTransform(currentPatient.transform, patientExitPoint != null ? patientExitPoint.position : currentPatient.transform.position, patientSpawnPoint.position, patientMoveDuration));
+        }
         
-        // Animación de entrada (simple)
-        yield return new WaitForSeconds(patientEnterTime);
-        
-        Debug.Log($"Paciente {currentPatientIndex + 1}/{todaysPatients.Count} listo");
+        // Desactivar paciente y dejar listo para siguiente
+        currentPatient.gameObject.SetActive(false);
+        currentPatient = null;
         
         isProcessing = false;
+
+        // Continuar con el siguiente paciente
+        StartCoroutine(BringNextPatient());
     }
 
     /// <summary>
     /// Despide al paciente actual y trae el siguiente.
+    /// (Este método queda como respaldo; la nueva lógica usa BringNextPatient con movimientos)
     /// </summary>
     IEnumerator DismissPatientAndNext()
     {
+        // ...existing code (mantenido como backup, pero no se usa normalmente)
         isProcessing = true;
         
         if (currentPatient != null)
         {
-            // Animación de salida
+            // Animación de salida (simple fallback)
             yield return new WaitForSeconds(patientExitTime);
             currentPatient.gameObject.SetActive(false);
             currentPatient = null;
@@ -317,6 +390,41 @@ public class DayCycleOrchestrator : MonoBehaviour
         isProcessing = false;
         
         yield return BringNextPatient();
+    }
+
+    /// <summary>
+    /// Coroutine utilitario: mueve un Transform de 'from' a 'to' en 'duration' segundos (suavizado)
+    /// También rota suavemente al objetivo para mayor realismo.
+    /// </summary>
+    IEnumerator MoveTransform(Transform t, Vector3 from, Vector3 to, float duration)
+    {
+        if (t == null) yield break;
+        if (duration <= 0f)
+        {
+            t.position = to;
+            yield break;
+        }
+
+        float elapsed = 0f;
+
+        Quaternion startRot = t.rotation;
+        Quaternion targetRot = startRot;
+        Vector3 dir = (to - from);
+        if (dir.sqrMagnitude > 0.0001f)
+        {
+            targetRot = Quaternion.LookRotation(dir.normalized);
+        }
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float p = Mathf.SmoothStep(0f, 1f, elapsed / duration);
+            t.position = Vector3.Lerp(from, to, p);
+            t.rotation = Quaternion.Slerp(startRot, targetRot, p);
+            yield return null;
+        }
+        t.position = to;
+        t.rotation = targetRot;
     }
 
     /// <summary>
