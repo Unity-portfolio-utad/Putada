@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a81375bba5c4578aea61f401a5dd674, type: 3}
+  m_Name: Disease_SnailEyes
+  m_EditorClassIdentifier: Assembly-CSharp::DiseaseDefinition
+  id: 4
+  severity: 1
+  displayName: Ojos de Caracol
+  description: Ojos que sobresalen. Se cura con sal.
+  isMildProgressive: 0
+  mildDailyIncrease: 0.34
+  correctCure: 5
+  killsIfUntreated: 0
+  consequenceIfTreatedCorrectly: {fileID: 11400000, guid: 9c1cf5f5f6923ed4e86eef9b4b22e90c, type: 2}
+  consequenceIfWrongOrNotTreated: {fileID: 11400000, guid: 809b14867491b364db37df26c6438008, type: 2}

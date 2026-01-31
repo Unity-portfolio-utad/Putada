@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a81375bba5c4578aea61f401a5dd674, type: 3}
+  m_Name: Disease_Otitis
+  m_EditorClassIdentifier: Assembly-CSharp::DiseaseDefinition
+  id: 2
+  severity: 0
+  displayName: Otitis
+  description: "Infecci\xF3n de o\xEDdo. Se cura con lijas."
+  isMildProgressive: 1
+  mildDailyIncrease: 0.34
+  correctCure: 3
+  killsIfUntreated: 0
+  consequenceIfTreatedCorrectly: {fileID: 11400000, guid: b2961da37361f4048bba3b867e75630c, type: 2}
+  consequenceIfWrongOrNotTreated: {fileID: 11400000, guid: 3d9a622ed8246f4459434c9a4f06a748, type: 2}
