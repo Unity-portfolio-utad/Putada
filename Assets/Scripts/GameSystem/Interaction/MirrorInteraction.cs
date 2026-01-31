@@ -47,6 +47,6 @@ public class MirrorInteraction : MonoBehaviour
     void UseMirror()
     {
         Debug.Log("Usando espejo...");
-        // Aquí podrías mostrar UI de autoexamen, ver tu cara, etc.
+        
     }
 }
