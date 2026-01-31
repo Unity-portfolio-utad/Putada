@@ -21,10 +21,11 @@ MonoBehaviour:
     includesBodyBugsSpecial: 0
     infectionRule: 0
     guaranteedPatientIndex: 0
-    tutorialText: Bienvenido. Trata al paciente con la cura correcta.
+    tutorialText: ' Welcome. Treat the patien with the correct cure. Use your manual
+      for help.'
     isTutorialDay: 1
   - dayIndex: 1
-    dayName: "D\xEDa 1"
+    dayName: Day 1
     patientCount: 2
     mildCount: 2
     severeCount: 0
@@ -34,7 +35,7 @@ MonoBehaviour:
     tutorialText: 
     isTutorialDay: 0
   - dayIndex: 2
-    dayName: "D\xEDa 2"
+    dayName: Day 2
     patientCount: 3
     mildCount: 2
     severeCount: 1
@@ -44,7 +45,7 @@ MonoBehaviour:
     tutorialText: 
     isTutorialDay: 0
   - dayIndex: 3
-    dayName: "D\xEDa 3"
+    dayName: Day 3
     patientCount: 4
     mildCount: 2
     severeCount: 2
@@ -54,7 +55,7 @@ MonoBehaviour:
     tutorialText: 
     isTutorialDay: 0
   - dayIndex: 4
-    dayName: "D\xEDa Final"
+    dayName: Final Day
     patientCount: 5
     mildCount: 3
     severeCount: 1
@@ -63,23 +64,23 @@ MonoBehaviour:
     guaranteedPatientIndex: 0
     tutorialText: 
     isTutorialDay: 0
-  deathMessageUntreatedSevere: HAS MUERTO POR UNA ENFERMEDAD GRAVE NO TRATADA.
-  deathMessageMildOverflow: "HAS MUERTO POR ACUMULAR ENFERMEDADES LEVES HASTA EL
-    L\xCDMITE."
-  deathMessageBodyBugs: 'FINAL DEL JUEGO.
+  deathMessageUntreatedSevere: HAS MUERTO POR UNA ENFERMEDAD GRAVE NO TRATADA. YOU
+    DIED DUE TO A SEVERE DISEASE
+  deathMessageMildOverflow: 'YOU DIED DUE TO MILD DISEASES '
+  deathMessageBodyBugs: 'END OF GAME
 
 
-    HAS MUERTO.
+    YOU DIED EATEN BY LARVS
 
 
-    No siempre hay
-    una cura para todo...'
-  deathMessageCandle: 'FINAL DEL JUEGO.
+    Not always
+    do we find the cure...'
+  deathMessageCandle: 'END OF GAME
 
 
-    HAS MUERTO.
+    YOU DIED IN FLAMES TRYING TO FIND THE CURE
 
 
-    No siempre hay una
-    cura para todo...'
+    Not
+    always do we find the cure...'
   deathScreenDuration: 5
