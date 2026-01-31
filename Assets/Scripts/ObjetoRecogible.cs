@@ -25,7 +25,9 @@ public class ObjetoRecogible : MonoBehaviour
 
     void Update()
     {
+        if (objeto == null) return;
         transform.LookAt(objeto.transform.position);
+        transform.transform.rotation = Quaternion.Euler( transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y + 180, transform.rotation.eulerAngles.z );
     }
 
 
