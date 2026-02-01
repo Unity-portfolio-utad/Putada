@@ -372,6 +372,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 106944908}
     m_Modifications:
     - target: {fileID: -1119792957172262766, guid: 79a1b53c03e96ca44acb75c4f4618991, type: 3}
+      propertyPath: camMovement
+      value: 
+      objectReference: {fileID: 1883996682}
+    - target: {fileID: -1119792957172262766, guid: 79a1b53c03e96ca44acb75c4f4618991, type: 3}
+      propertyPath: picsDisplay
+      value: 
+      objectReference: {fileID: 159273841}
+    - target: {fileID: -1119792957172262766, guid: 79a1b53c03e96ca44acb75c4f4618991, type: 3}
+      propertyPath: mirrorSprite
+      value: 
+      objectReference: {fileID: 159273841}
+    - target: {fileID: -1119792957172262766, guid: 79a1b53c03e96ca44acb75c4f4618991, type: 3}
       propertyPath: playerStatus
       value: 
       objectReference: {fileID: 1883996689}
@@ -379,6 +391,38 @@ PrefabInstance:
       propertyPath: disabledMessage
       value: ' Since the SnailEyes disease I cannot even look at my own face...'
       objectReference: {fileID: 0}
+    - target: {fileID: -1119792957172262766, guid: 79a1b53c03e96ca44acb75c4f4618991, type: 3}
+      propertyPath: pics.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -1119792957172262766, guid: 79a1b53c03e96ca44acb75c4f4618991, type: 3}
+      propertyPath: 'pics.Array.data[0]'
+      value: 
+      objectReference: {fileID: -512482697, guid: 7223991ffae48c7458e7f5dca2f15d6d, type: 3}
+    - target: {fileID: -1119792957172262766, guid: 79a1b53c03e96ca44acb75c4f4618991, type: 3}
+      propertyPath: 'pics.Array.data[1]'
+      value: 
+      objectReference: {fileID: 770169778, guid: 7223991ffae48c7458e7f5dca2f15d6d, type: 3}
+    - target: {fileID: -1119792957172262766, guid: 79a1b53c03e96ca44acb75c4f4618991, type: 3}
+      propertyPath: 'pics.Array.data[2]'
+      value: 
+      objectReference: {fileID: -164179274, guid: 7223991ffae48c7458e7f5dca2f15d6d, type: 3}
+    - target: {fileID: -1119792957172262766, guid: 79a1b53c03e96ca44acb75c4f4618991, type: 3}
+      propertyPath: 'pics.Array.data[3]'
+      value: 
+      objectReference: {fileID: -976650878, guid: 7223991ffae48c7458e7f5dca2f15d6d, type: 3}
+    - target: {fileID: -1119792957172262766, guid: 79a1b53c03e96ca44acb75c4f4618991, type: 3}
+      propertyPath: 'pics.Array.data[4]'
+      value: 
+      objectReference: {fileID: -254812811, guid: 7223991ffae48c7458e7f5dca2f15d6d, type: 3}
+    - target: {fileID: -1119792957172262766, guid: 79a1b53c03e96ca44acb75c4f4618991, type: 3}
+      propertyPath: 'pics.Array.data[5]'
+      value: 
+      objectReference: {fileID: 1595489111, guid: 7223991ffae48c7458e7f5dca2f15d6d, type: 3}
+    - target: {fileID: -1119792957172262766, guid: 79a1b53c03e96ca44acb75c4f4618991, type: 3}
+      propertyPath: 'pics.Array.data[6]'
+      value: 
+      objectReference: {fileID: 1116281816, guid: 7223991ffae48c7458e7f5dca2f15d6d, type: 3}
     - target: {fileID: 1691762894605526938, guid: 79a1b53c03e96ca44acb75c4f4618991, type: 3}
       propertyPath: m_Name
       value: Mirror
@@ -431,6 +475,11 @@ PrefabInstance:
 --- !u!4 &159273840 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3414622872946770796, guid: 79a1b53c03e96ca44acb75c4f4618991, type: 3}
+  m_PrefabInstance: {fileID: 159273839}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &159273841 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7343760838356843974, guid: 79a1b53c03e96ca44acb75c4f4618991, type: 3}
   m_PrefabInstance: {fileID: 159273839}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &188468349

@@ -11,42 +11,67 @@
 [RequireComponent(typeof(Collider))]
 public class MirrorInteraction : MonoBehaviour
 {
-    [Header("Referencias")]
-    [Tooltip("PlayerStatus para verificar estado")]
-    public PlayerStatus playerStatus;
-
-    [Header("Mensajes")]
-    [TextArea(2, 3)]
     public string disabledMessage = "Desde la enfermedad del caracol no te puedes ni mirar a la cara...";
+
+    [SerializeField] PatientController patientController;
+    [SerializeField] SpriteRenderer mirrorSprite;
+    public Sprite[] pics;
+    private int currentPic = 0;
+    bool isViewing = false;
+    [SerializeField] CamMovement camMovement;
 
     void Start()
     {
-        if (playerStatus == null)
+        if (mirrorSprite != null)
         {
-            playerStatus = FindFirstObjectByType<PlayerStatus>();
+            var c = mirrorSprite.color; c.a = 0f; mirrorSprite.color = c; mirrorSprite.gameObject.SetActive(false);
         }
     }
 
     void OnMouseDown()
     {
-        if (playerStatus != null && playerStatus.mirrorDisabled)
-        {
-            // No puede usar el espejo
-            GameUIManager.Instance?.ShowMessage(disabledMessage);
-            return;
-        }
+        if (isViewing) return;
         
         // Usar el espejo normalmente
-        UseMirror();
+        StartCoroutine(ShowSequence());
     }
 
-    /// <summary>
-    /// Lógica de usar el espejo.
-    /// Puedes añadir aquí lo que quieras que pase.
-    /// </summary>
-    void UseMirror()
+    System.Collections.IEnumerator ShowSequence()
     {
         Debug.Log("Usando espejo...");
+
+        currentPic = 0;//(int)patientController.enfermedad;
+        currentPic = (pics != null && pics.Length > 0) ? UnityEngine.Random.Range(0, pics.Length) : 0;
         
+        mirrorSprite.sprite = pics[currentPic];
+        isViewing = true;
+        if (camMovement != null) camMovement.enabled = false;
+        Cursor.lockState = CursorLockMode.Locked; Cursor.visible = false;
+        if (mirrorSprite != null) mirrorSprite.gameObject.SetActive(true);
+
+        //scriptDialog.dialogoTemporal(currentPic);
+        
+        float target = 220f/255f;
+        float t = 0f;
+        while (t < 2f)
+        {
+            t += Time.deltaTime; if (mirrorSprite != null){var c=mirrorSprite.color;c.a=Mathf.Lerp(0f,target,t/2f);mirrorSprite.color=c;} yield return null;
+        }
+        if (mirrorSprite != null){var c2=mirrorSprite.color;c2.a=target;mirrorSprite.color=c2;}
+        
+        yield return new WaitForSeconds(2);
+        t = 0f;
+        while (t < 2f)
+        {
+            t += Time.deltaTime; if (mirrorSprite != null){var c=mirrorSprite.color;c.a=Mathf.Lerp(target,0f,t/5f);mirrorSprite.color=c;} yield return null;
+        }
+        if (mirrorSprite != null){var c3=mirrorSprite.color;c3.a=0f;mirrorSprite.color=c3;mirrorSprite.gameObject.SetActive(false);}
+
+        if (camMovement != null) camMovement.enabled = true;
+        Cursor.lockState = CursorLockMode.None; Cursor.visible = true;
+        isViewing = false;
     }
 }
+
+
+
