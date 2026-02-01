@@ -24,8 +24,8 @@ public class Personaje : MonoBehaviour
 
     public Enfermedad.Enfermedades enfermedad = Enfermedad.Enfermedades.NULL;
 
-    [SerializeField] int maxNpc = 3;
-    int npcCount = 0;
+    [SerializeField] public int maxNpc = 3;
+    public int npcCount = 0;
 
     [SerializeField] GameObject [] [] prefab ;
 

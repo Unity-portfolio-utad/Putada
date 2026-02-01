@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,16 +34,16 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -52,9 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -69,10 +69,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,12 +95,892 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: VerdugoUnmasked_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2297d00aa0da54740b144206aeb77695
+      internalID: 813526954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_1
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3ee2282bd901043bb54c0a6611c1fa
+      internalID: 520008872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_2
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7ad87be18ba104cb7ea48ec17476e9
+      internalID: 786722578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_3
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8249e2b4f0c1204492a692187fa1da4
+      internalID: -886806313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_4
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73bfa3438046de4db37c0c73aae66f2
+      internalID: -1627492982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_5
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7bfbdffa4b9669439fb7897162288c0
+      internalID: 1012127349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_6
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f27e5efb61e4b4497887ce9378cd1b
+      internalID: 140177973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 055e376e2405ea749b13f839365d14f4
+      internalID: -130925164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_8
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f36e51c0a6512842bef7b265af630c7
+      internalID: -917526079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_9
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8263901f9bb663a418376122835c323a
+      internalID: -424232460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_10
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b69eb87e64c380041b74b407a0ddce98
+      internalID: 2089314398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_11
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e505b63bc6ba348baa880e7e0c7f26
+      internalID: -608431294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_12
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 142f5a67ee70ecc48bae818d6483c032
+      internalID: -1081409483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_13
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21447668546a0e74c9a8ea23dec49e54
+      internalID: -1074549346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26302e05db3820a40ae7fb2c7054278f
+      internalID: 1377960952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_15
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb8a753eacfcd244bc0b9ef425ddebc
+      internalID: -597950474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_16
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5759619762999904e9ae56fe50a86a1f
+      internalID: -1475918220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_17
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddfa49398da920e4db84fcaf48a0366b
+      internalID: 1034180884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_18
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e807fa7b4ad86bb4f8056670b0f6fcc4
+      internalID: -1928496854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_19
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7454bd64111cfe1458149eb83c313288
+      internalID: -574993128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_20
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a6d18193f9b7e46b5109e29513e7a5
+      internalID: 2004755618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9669195c2978328418b29808ed264d16
+      internalID: -908277236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_22
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91dd695f461e2a34fba57c8ff695c538
+      internalID: -941668987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_23
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22f62eb8bb1dfc4985424944911cb80
+      internalID: -329775952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_24
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b39eb8c88bd7f0c438725256f6f9bc84
+      internalID: -1917417385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_25
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c0bdbd5bb923f641865a55ed90bde7b
+      internalID: 1747265927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_26
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c9f3f0ed07a2449a32150b5befddd2
+      internalID: -361859564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_27
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f536a2433df21b47a1f57a4e26653b3
+      internalID: 1478688759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e7ac7c415df334f94ecc8e1c744321
+      internalID: -1564584806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_29
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5524ab4cc5581ab4ba3b3d7790846dba
+      internalID: 174307347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_30
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b847bb0987015942a90f71545ab168d
+      internalID: 816212327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_31
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ffa031b10cfb8499fba16dd0a20f5f
+      internalID: 743442605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_32
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ccdf31e24ae05c4c8d36e6005132ba4
+      internalID: -990464245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_33
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b42f071defa58d4fa0281c01d4877a4
+      internalID: 98700137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_34
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7c7a81957173e54ca43f180e63a0076
+      internalID: 2097066430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1864f46264849a447868ceda8ce172cc
+      internalID: -2051826464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_36
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 0
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e54efe272bed14981d0224c8cc18ee
+      internalID: 1525523680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_37
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 0
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 012baefc2c3ea144a8e1a45d1e6371ef
+      internalID: -472407039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_38
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 0
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d33d1a0d4569a4d83281e67ffb61e5
+      internalID: 1872130234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerdugoUnmasked_39
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 0
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237b87409c810534cbb97f242451cd9f
+      internalID: 189942877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 37dd48af71255414c9553ed489a12585
     internalID: 0
     vertices: []
     indices: 
@@ -108,8 +988,52 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
-    nameFileIdTable: {}
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":6.0},"gridSpriteSize":{"x":620.0,"y":1080.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      VerdugoUnmasked_0: 813526954
+      VerdugoUnmasked_1: 520008872
+      VerdugoUnmasked_10: 2089314398
+      VerdugoUnmasked_11: -608431294
+      VerdugoUnmasked_12: -1081409483
+      VerdugoUnmasked_13: -1074549346
+      VerdugoUnmasked_14: 1377960952
+      VerdugoUnmasked_15: -597950474
+      VerdugoUnmasked_16: -1475918220
+      VerdugoUnmasked_17: 1034180884
+      VerdugoUnmasked_18: -1928496854
+      VerdugoUnmasked_19: -574993128
+      VerdugoUnmasked_2: 786722578
+      VerdugoUnmasked_20: 2004755618
+      VerdugoUnmasked_21: -908277236
+      VerdugoUnmasked_22: -941668987
+      VerdugoUnmasked_23: -329775952
+      VerdugoUnmasked_24: -1917417385
+      VerdugoUnmasked_25: 1747265927
+      VerdugoUnmasked_26: -361859564
+      VerdugoUnmasked_27: 1478688759
+      VerdugoUnmasked_28: -1564584806
+      VerdugoUnmasked_29: 174307347
+      VerdugoUnmasked_3: -886806313
+      VerdugoUnmasked_30: 816212327
+      VerdugoUnmasked_31: 743442605
+      VerdugoUnmasked_32: -990464245
+      VerdugoUnmasked_33: 98700137
+      VerdugoUnmasked_34: 2097066430
+      VerdugoUnmasked_35: -2051826464
+      VerdugoUnmasked_36: 1525523680
+      VerdugoUnmasked_37: -472407039
+      VerdugoUnmasked_38: 1872130234
+      VerdugoUnmasked_39: 189942877
+      VerdugoUnmasked_4: -1627492982
+      VerdugoUnmasked_40: 1118858310
+      VerdugoUnmasked_41: 1460389673
+      VerdugoUnmasked_5: 1012127349
+      VerdugoUnmasked_6: 140177973
+      VerdugoUnmasked_7: -130925164
+      VerdugoUnmasked_8: -917526079
+      VerdugoUnmasked_9: -424232460
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
