@@ -56,8 +56,10 @@ public class ScriptDialog : MonoBehaviour
         StartCoroutine(fadeIn());
         textComponent.text = string.Empty;
         GenerarDialogoEnfermedad();
-        anim = GetComponent<Animator>();
-        anim.runtimeAnimatorController = aniControlllers[UnityEngine.Random.Range(0, aniControlllers.Length - 1)];
+        anim = this.GetComponent<Animator>();
+        anim.runtimeAnimatorController = aniControlllers[UnityEngine.Random.Range(0, aniControlllers.Length)];
+        //Clampea el numero a uno dentro del rango
+        //anim.runtimeAnimatorController = aniControlllers[Mathf.Clamp((int)nakim - 1, 0, aniControlllers.Length - 1)];
     }
 
     void Update()
@@ -224,7 +226,9 @@ public class ScriptDialog : MonoBehaviour
         sr.color = new Color(1.0f, 1.0f, 1.0f, opacity);
 
         textComponent.SetText("");
-        perj.nextNpc(this.gameObject);
+        
+        if(perj.npcCount < perj.maxNpc)
+            perj.nextNpc(this.gameObject);
         //Hacer que venga el siguiente
     }
     
