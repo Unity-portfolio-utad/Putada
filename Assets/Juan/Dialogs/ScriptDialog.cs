@@ -75,21 +75,22 @@ public class ScriptDialog : MonoBehaviour
     void GenerarDialogoEnfermedad()
     {
         lines.Clear();
+        NightShift nightShift = perj.nightShift;
+        if (nightShift == null)
+        {
+            // intentar recuperar una referencia válida en la escena
+            nightShift = FindFirstObjectByType<NightShift>();
+        }
 
         Enfermedad.Enfermedades enfermedadElegida;
 
-        if (leve)
+        if (leve && nightShift.diaActual < 5)
         {
             enfermedadElegida = Enfermedad.leves[UnityEngine.Random.Range(0, Enfermedad.leves.Length)];
         }
         else
         {
-            NightShift nightShift = perj.nightShift;
-            if (nightShift == null)
-            {
-                // intentar recuperar una referencia válida en la escena
-                nightShift = FindFirstObjectByType<NightShift>();
-            }
+            
             if(nightShift.diaActual == 5)
             {
                 enfermedadElegida = Enfermedad.Enfermedades.BICHOS_OJOS;
