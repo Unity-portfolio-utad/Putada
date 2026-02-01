@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -5,20 +6,33 @@ public class NightShift : MonoBehaviour
 {
     [SerializeField] private AudioClip[] audioDias;
     [SerializeField] private AudioSource audioSource;
-    [SerializeField] private Image dieImage;
 
     //Un canva que se activa al morir
     [SerializeField] private GameObject canvas;
 
     //Tiene un texto que dice cuantos pacientes han muerto
     [SerializeField] private TMPro.TextMeshProUGUI textoMuertes;
-    
-    public void ActivarNightShift(int muertes, bool playerDied = false)
+    private int currentIndex;
+    private int nextIndex;
+
+
+    private void Start()
     {
-        StartCoroutine(FadeCanvasAndChangeAudio(muertes, playerDied));
+        if (audioDias != null && audioDias.Length > 0 && audioSource != null)
+        {
+            currentIndex = System.Array.IndexOf(audioDias, audioSource.clip);
+            nextIndex = (currentIndex + 1) % audioDias.Length;
+            audioSource.clip = audioDias[nextIndex];
+            audioSource.Play();
+        }
     }
 
-    private System.Collections.IEnumerator FadeCanvasAndChangeAudio(int muertes, bool playerDied = false)
+    public void ActivarNightShift(int muertes)
+    {
+        StartCoroutine(FadeCanvasAndChangeAudio(muertes));
+    }
+
+    private System.Collections.IEnumerator FadeCanvasAndChangeAudio(int muertes)
     {
         //Activar canvas
         canvas.SetActive(true);
@@ -30,9 +44,7 @@ public class NightShift : MonoBehaviour
         if (canvasGroup == null)
         {
             canvasGroup = canvas.AddComponent<CanvasGroup>();
-            if(playerDied)
-                //Si el jugador a muerto poner la imagen de muerte como fondo
-                dieImage.enabled = true;
+
         }
 
         canvasGroup.alpha = 0f;
@@ -60,8 +72,8 @@ public class NightShift : MonoBehaviour
         //Aqui solo debes coger el siguiente audio del array
         if (audioDias != null && audioDias.Length > 0 && audioSource != null)
         {
-            int currentIndex = System.Array.IndexOf(audioDias, audioSource.clip);
-            int nextIndex = (currentIndex + 1) % audioDias.Length;
+            currentIndex = System.Array.IndexOf(audioDias, audioSource.clip);
+            nextIndex = (currentIndex + 1) % audioDias.Length;
             audioSource.clip = audioDias[nextIndex];
             audioSource.Play();
         }
@@ -78,4 +90,23 @@ public class NightShift : MonoBehaviour
         //Desactivar canvas
         canvas.SetActive(false);
     }
+    
+    //USO
+    
+    //[SerializeField] NightShift nightShift;
+    
+    // if (nightShift == null)
+    // {
+    //     // intentar recuperar una referencia válida en la escena
+    //     nightShift = FindFirstObjectByType<NightShift>();
+    // }
+    //
+    // if (nightShift != null)
+    // {
+    //     nightShift.ActivarNightShift(3, true);
+    // }
+    // else
+    // {
+    //     Debug.LogWarning($"MirrorInteraction: nightShift no asignado en Inspector ni encontrado en escena. GameObject: {gameObject.name}", this);
+    // }
 }

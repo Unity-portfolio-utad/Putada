@@ -14,6 +14,8 @@ namespace GameSystem.Interaction
 
         [SerializeField] private Collider nextPageCollider;
         [SerializeField] private Collider previousPageCollider;
+        [SerializeField] AudioSource pageTurnSound;
+        [SerializeField] AudioClip pageTurnClip;
 
 
         public void NextPage()
@@ -46,7 +48,8 @@ namespace GameSystem.Interaction
         
         
         public void PageAnim()
-        {
+        {   
+                pageTurnSound.PlayOneShot(pageTurnClip);
                 Transform animationObject = transform.Find("Animacion");
                 if (animationObject != null)
                 {
