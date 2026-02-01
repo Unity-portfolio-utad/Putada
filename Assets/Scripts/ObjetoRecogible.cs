@@ -46,7 +46,8 @@ public class ObjetoRecogible : MonoBehaviour
         }
         if(personaje.npcCount == personaje.maxNpc)
         {
-            StartCoroutine(PlayActionSound());
+           // StartCoroutine(PlayActionSound());
+           audioSource.PlayOneShot(actionSound);
             
         }
     }

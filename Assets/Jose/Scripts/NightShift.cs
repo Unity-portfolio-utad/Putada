@@ -1,5 +1,4 @@
 using System;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,12 +10,11 @@ public class NightShift : MonoBehaviour
 
     //Un canva que se activa al morir
     [SerializeField] private GameObject canvas;
-    [SerializeField] private GameObject canvasVida;
     [SerializeField] private GameObject canvasRapido;
 
     //Tiene un texto que dice cuantos pacientes han muerto
     [SerializeField] private TMPro.TextMeshProUGUI textoMuertes;
-    [SerializeField] private TMPro.TextMeshProUGUI textoVida;
+    [SerializeField] private Image imagenFondo;
     [SerializeField] private TMPro.TextMeshProUGUI textoRapido;
     private int currentIndex;
     private int nextIndex;
@@ -42,17 +40,30 @@ public class NightShift : MonoBehaviour
     private System.Collections.IEnumerator FadeCanvasAndChangeAudio(int muertes, bool death)
     {
         deathActivated = death;
-        GameObject activeCanvas = deathActivated ? canvas : canvasVida;
-        TextMeshProUGUI textCanvas = deathActivated ? textoMuertes : textoVida;
+
+        // Protecciones para evitar NullReference
+        if (canvas == null)
+        {
+            Debug.LogWarning("NightShift: 'canvas' no asignado en Inspector. Abortando FadeCanvasAndChangeAudio.");
+            yield break;
+        }
+
+        //Activar canvas
+        canvas.SetActive(true);
         
+        if (imagenFondo != null)
+        {
+            imagenFondo.color = deathActivated ? Color.white : Color.black;
+            imagenFondo.gameObject.SetActive(true);
+        }
 
         //Fade in
         float duration = 2f; // Duración del fade
         float currentTime = 0f;
-        CanvasGroup canvasGroup = activeCanvas.GetComponent<CanvasGroup>();
+        CanvasGroup canvasGroup = canvas.GetComponent<CanvasGroup>();
         if (canvasGroup == null)
         {
-            canvasGroup = activeCanvas.AddComponent<CanvasGroup>();
+            canvasGroup = canvas.AddComponent<CanvasGroup>();
 
         }
 
@@ -67,24 +78,32 @@ public class NightShift : MonoBehaviour
     
         if(!deathActivated)
         {
-            //Mostrar texto
-            textCanvas.text = "";
-            string fullText = "Patients deceased tonight: " + muertes;
-            for (int i = 0; i < fullText.Length; i++)
+            //Mostrar texto si está disponible, si no, esperar el mismo tiempo
+            if (textoMuertes != null)
             {
-                textCanvas.text += fullText[i];
-                yield return new WaitForSeconds(0.1f);
+                textoMuertes.text = "";
+                string fullText = "Patients deceased tonight: " + muertes;
+                for (int i = 0; i < fullText.Length; i++)
+                {
+                    textoMuertes.text += fullText[i];
+                    yield return new WaitForSeconds(0.1f);
+                }
+
+                //Esperar 3 segundos tras mostrar texto
+                yield return new WaitForSeconds(3f);
+                textoMuertes.text = "";
+            }
+            else
+            {
+                // Si no hay texto, mantenemos la misma espera para no alterar timing
+                yield return new WaitForSeconds(3f);
             }
 
-            //Esperar 2 segundos
-            yield return new WaitForSeconds(3f);
-
             //Cambiar audio al siguiente dia
-            //Aqui solo debes coger el siguiente audio del array
             if (audioDias != null && audioDias.Length > 0 && audioSource != null)
             {
                 currentIndex = System.Array.IndexOf(audioDias, audioSource.clip);
-                nextIndex = (currentIndex + 1) % audioDias.Length;
+                nextIndex = (currentIndex + 1 + audioDias.Length) % audioDias.Length;
                 audioSource.clip = audioDias[nextIndex];
                 audioSource.Play();
             }
@@ -99,22 +118,32 @@ public class NightShift : MonoBehaviour
             }
 
             //Desactivar canvas
-            activeCanvas.SetActive(false);
-            textCanvas.text = "";
-        }else if(deathActivated)
+            canvas.SetActive(false);
+        }else // deathActivated
         {
-            //Mostrar texto
-            textCanvas.text = "";
-            string fullText = "You DIED, choose wisely next time.";
-            for (int i = 0; i < fullText.Length; i++)
+            if (textoMuertes != null)
             {
-                textCanvas.text += fullText[i];
-                yield return new WaitForSeconds(0.1f);
+                textoMuertes.text = "";
+                string fullText = "You DIED, choose wisely next time.";
+                for (int i = 0; i < fullText.Length; i++)
+                {
+                    textoMuertes.text += fullText[i];
+                    yield return new WaitForSeconds(0.1f);
+                }
+            }
+            else
+            {
+                // si no hay texto, esperar el mismo tiempo
+                yield return new WaitForSeconds(0.1f * 34); // aproximación del tiempo que tardaría en escribir
             }
 
-            audioSource.clip = audioMuerte;
-            audioSource.Play();
-            //Esperar 2 segundos
+            if (audioSource != null && audioMuerte != null)
+            {
+                audioSource.clip = audioMuerte;
+                audioSource.Play();
+            }
+
+            //Esperar 3 segundos
             yield return new WaitForSeconds(3f);
             
             //Restart scene
@@ -138,6 +167,12 @@ public class NightShift : MonoBehaviour
 
     private System.Collections.IEnumerator FastMsgCoroutine(string msg)
     {
+        if (canvasRapido == null)
+        {
+            Debug.LogWarning("NightShift: 'canvasRapido' no asignado en Inspector. FastMsg omitido.");
+            yield break;
+        }
+
         canvasRapido.SetActive(true);
         
         //Fade in
@@ -159,14 +194,22 @@ public class NightShift : MonoBehaviour
             yield return null;
         }
         
-        textoRapido.text = "";
-        string fullText = msg;
-        for (int i = 0; i < fullText.Length; i++)
+        if (textoRapido != null)
         {
-            textoRapido.text += fullText[i];
-            yield return new WaitForSeconds(0.01f);
+            textoRapido.text = "";
+            string fullText = msg;
+            for (int i = 0; i < fullText.Length; i++)
+            {
+                textoRapido.text += fullText[i];
+                yield return new WaitForSeconds(0.01f);
+            }
+            yield return new WaitForSeconds(3f);
+            textoRapido.text = "";
         }
-        yield return new WaitForSeconds(3f);
+        else
+        {
+            yield return new WaitForSeconds(3f);
+        }
         
         //Fade out
         currentTime = 0f;
@@ -179,7 +222,6 @@ public class NightShift : MonoBehaviour
 
         //Desactivar canvas
         canvasRapido.SetActive(false);
-        textoRapido.text = "";
         
         // coroutine finalizada
         yield break;
