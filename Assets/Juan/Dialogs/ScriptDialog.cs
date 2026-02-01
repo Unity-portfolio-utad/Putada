@@ -45,6 +45,8 @@ public class ScriptDialog : MonoBehaviour
 
     void Start()
     {
+        perj = GameObject.FindFirstObjectByType<Personaje>();
+        enfermedad = GameObject.FindFirstObjectByType<Enfermedad>();
         GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f, 0);
         StartCoroutine(fadeIn());
         textComponent.text = string.Empty;
@@ -55,6 +57,7 @@ public class ScriptDialog : MonoBehaviour
     void Update()
     {
         if (index == -1 || lines.Count == 0) return;
+        if (!isDialogActive) return;
         if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
         {
             if (textComponent.text == lines[index])
