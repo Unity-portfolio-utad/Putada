@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine.InputSystem;
 
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class ScriptDialog : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
     public float textSpeed = 0.05f;
@@ -127,7 +127,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
         }
     }
 
-    void comenzarDialogo()
+    public void comenzarDialogo()
     {
         index = 0;
         if (lines.Count > 0)

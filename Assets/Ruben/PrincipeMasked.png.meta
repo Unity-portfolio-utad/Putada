@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,16 +34,16 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -52,9 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -69,10 +69,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,12 +108,892 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: PrincipeMasked_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf4929afbd4cf38d3a73ba32ed8141b0
+      internalID: 73923254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_1
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4385f456a51507348b66a193d6b53629
+      internalID: 1504920235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_2
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: def32fd888559cc4f83da06a05c4a3e2
+      internalID: -1634002358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_3
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d231b2235f56844389c5c24c100d8883
+      internalID: 1101486981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_4
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e1052543eb045289aea2384aa2c5df
+      internalID: -1342332346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_5
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769bc2f28a31dbf0da2431bd1aa5607c
+      internalID: -1852207437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_6
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a42bad89e64c6a63a16d2b2575eb0ed
+      internalID: 914167360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c615a02a8320208b360624c0601c3c
+      internalID: -1061073443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_8
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b31724bacd5a1548e0f901d3b95abd
+      internalID: -168934079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_9
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56964c0125fabff67816ef7867e75707
+      internalID: 1350316390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_10
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5eb9c348480af1f9afbe758ef7e32e5
+      internalID: 1291054951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_11
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83986105a337f81759b0e7103d003204
+      internalID: 498633584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_12
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae1894acafb48eaa8f235f5b699e270
+      internalID: 1769058939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_13
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ad723611075d8eebf3e3e23de18ad5
+      internalID: -2110876070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8802000365a41340b1a80c94aa6b418
+      internalID: 848162845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_15
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f546d1192a4f4c77b88de1ea6299ad47
+      internalID: 1833709208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_16
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e743f9e0be0beae55b5e8260fff5b96a
+      internalID: 155915411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_17
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693b0515fb8725a7d8f361b373bfe074
+      internalID: 1300172311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_18
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c36139e19386a798f8c00fc750be0c
+      internalID: 1805507776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_19
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60dcd32e698b6a9dca0164d4d5c3e15d
+      internalID: 1273282073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_20
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e8749d3bff9c5369c4178419d69ac6
+      internalID: -599461571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1fb798c53b533f09046e1389664061
+      internalID: 642616695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_22
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b54a04d2fa55e17bc86bd1f7913b82
+      internalID: 934357567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_23
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba8caa4b086339fea29b4059710380e
+      internalID: -933551344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_24
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fec45ec604954ca28fb590a02ae5e85
+      internalID: 1002095887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_25
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db4bea03a03fbc0beb32fadb14a6c6ac
+      internalID: -1156736524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_26
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4222f80a5ce906e9cace4a0e4eb7d0
+      internalID: 240212719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_27
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeca0e397f8c5c50d8a1a84c8dab4061
+      internalID: 812905784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a23e5108fa10cbba7ae307f3ba1919c0
+      internalID: 468353821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_29
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af22b32003e84868af6176d440ade65
+      internalID: -816539092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_30
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a4094e765efebcd9ddcb69ec0a86da
+      internalID: 1696253718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_31
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f8ecbcc4f8ebf7397ec9f0eb85a17e
+      internalID: -954355794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_32
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521071854812853d382e61b37b29cfe0
+      internalID: -2121869939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_33
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464a20ee12ce44cf09908c074144b4a9
+      internalID: 231108025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_34
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2f1916a4f3f6abe952bda85bbb07a4
+      internalID: 750340896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5caa94aae24cc768986c6433f0de0bf
+      internalID: -504725779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_36
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 0
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b778a8a23a95f81b03428de0ae0255
+      internalID: 1018482115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_37
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 0
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340dac4e30f78c6a392709f55b392bd0
+      internalID: 323557998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_38
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 0
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 882184fb5025d9a5fa5b7468921b1ff1
+      internalID: 877337543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrincipeMasked_39
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 0
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c32d0e8675f60578c783be070e2d97
+      internalID: 1601079730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ca5a1a4112012b151bd0dc057d90da9a
     internalID: 0
     vertices: []
     indices: 
@@ -121,8 +1001,52 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
-    nameFileIdTable: {}
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":6.0},"gridSpriteSize":{"x":620.0,"y":1080.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      PrincipeMasked_0: 73923254
+      PrincipeMasked_1: 1504920235
+      PrincipeMasked_10: 1291054951
+      PrincipeMasked_11: 498633584
+      PrincipeMasked_12: 1769058939
+      PrincipeMasked_13: -2110876070
+      PrincipeMasked_14: 848162845
+      PrincipeMasked_15: 1833709208
+      PrincipeMasked_16: 155915411
+      PrincipeMasked_17: 1300172311
+      PrincipeMasked_18: 1805507776
+      PrincipeMasked_19: 1273282073
+      PrincipeMasked_2: -1634002358
+      PrincipeMasked_20: -599461571
+      PrincipeMasked_21: 642616695
+      PrincipeMasked_22: 934357567
+      PrincipeMasked_23: -933551344
+      PrincipeMasked_24: 1002095887
+      PrincipeMasked_25: -1156736524
+      PrincipeMasked_26: 240212719
+      PrincipeMasked_27: 812905784
+      PrincipeMasked_28: 468353821
+      PrincipeMasked_29: -816539092
+      PrincipeMasked_3: 1101486981
+      PrincipeMasked_30: 1696253718
+      PrincipeMasked_31: -954355794
+      PrincipeMasked_32: -2121869939
+      PrincipeMasked_33: 231108025
+      PrincipeMasked_34: 750340896
+      PrincipeMasked_35: -504725779
+      PrincipeMasked_36: 1018482115
+      PrincipeMasked_37: 323557998
+      PrincipeMasked_38: 877337543
+      PrincipeMasked_39: 1601079730
+      PrincipeMasked_4: -1342332346
+      PrincipeMasked_40: -1793596430
+      PrincipeMasked_41: 621917564
+      PrincipeMasked_5: -1852207437
+      PrincipeMasked_6: 914167360
+      PrincipeMasked_7: -1061073443
+      PrincipeMasked_8: -168934079
+      PrincipeMasked_9: 1350316390
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
