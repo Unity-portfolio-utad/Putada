@@ -20,8 +20,17 @@ public class Personaje : MonoBehaviour
 
     public Items activeItem;
 
+    public Enfermedad.Enfermedades enfermedad = Enfermedad.Enfermedades.NULL;
+
+    [SerializeField]
+    int maxNpc = 3;
+    int npcCount = 0;
+
+
     void Start()
     {
+        Array v = Enum.GetValues(typeof (Enfermedad.Enfermedades));
+        enfermedad = (Enfermedad.Enfermedades) v.GetValue(UnityEngine.Random.Range(1, v.Length));
         if (armario == null)
         {
             armario = GameObject.Find("estanteria").GetComponent<Armario>();

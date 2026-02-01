@@ -3,8 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine.InputSystem;
-using Unity.VisualScripting;
-using NUnit.Framework.Constraints;
 
 
 public class ScriptDialog : MonoBehaviour
@@ -223,15 +221,18 @@ public class ScriptDialog : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (perj.activeItem == Personaje.Items.NULL )
+        if (perj.activeItem == Personaje.Items.NULL)
         {
-            if (!ready && !isDialogActive) return;
-            isDialogActive = true;
-            comenzarDialogo();
+            if (!ready || isDialogActive) {}
+            else {
+                isDialogActive = true;
+                comenzarDialogo();
+            }
         }
 
         else
         {
+            ready = false;
             StartCoroutine(fadeOut());
         }
     }
