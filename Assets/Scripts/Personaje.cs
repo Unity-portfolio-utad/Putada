@@ -29,6 +29,8 @@ public class Personaje : MonoBehaviour
     [SerializeField]
     GameObject prefab;
 
+    public int dead = 0;
+
 
     void Start()
     {

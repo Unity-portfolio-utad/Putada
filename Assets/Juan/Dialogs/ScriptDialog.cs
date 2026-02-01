@@ -32,7 +32,7 @@ public class ScriptDialog : MonoBehaviour
 
     public enum TipoSintoma { A_Calor, B_Flujos, C_Cuerpo, D_Dolor, E_Conducta }
 
-    public enum Enfermedades { CATARRO, SARPULLIDO, RAMAS_BRAZOS, OTITIS, OJOS_CARACOL, LEPRA, BICHOS_OJOS }
+    public enum Enfermedades { NULL, CATARRO, SARPULLIDO, RAMAS_BRAZOS, OTITIS, OJOS_CARACOL, LEPRA, BICHOS_OJOS }
 
     [System.Serializable]
     public struct SintomaData
@@ -241,6 +241,10 @@ public class ScriptDialog : MonoBehaviour
         {
             ready = false;
             StartCoroutine(fadeOut());
+            if ((int)perj.activeItem == (int)nakim)
+            {
+                perj.dead++;
+            }
         }
     }
 }
