@@ -3601,6 +3601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Personaje
   armario: {fileID: 5540939375001227114}
+  nightShift: {fileID: 0}
   activeItem: 0
   enfermedad: 0
   maxNpc: 3
@@ -3759,6 +3760,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NightShift
   audioDias: []
   audioSource: {fileID: 1883996690}
+  audioMuerte: {fileID: 8300000, guid: ae120643cc1ead74b8ed040733877364, type: 3}
   canvas: {fileID: 269185798}
   textoMuertes: {fileID: 1407746012}
 --- !u!114 &1883996693

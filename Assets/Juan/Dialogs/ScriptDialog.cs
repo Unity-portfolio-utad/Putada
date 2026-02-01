@@ -244,7 +244,7 @@ public class ScriptDialog : MonoBehaviour
         {
             ready = false;
             StartCoroutine(fadeOut());
-            if ((int)perj.activeItem == (int)nakim)
+            if ((int)perj.activeItem != (int)nakim)
             {
                 perj.dead++;
             }

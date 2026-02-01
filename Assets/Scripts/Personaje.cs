@@ -6,6 +6,7 @@ public class Personaje : MonoBehaviour
 
     [SerializeField]
     Armario armario;
+    [SerializeField] NightShift nightShift;
     
     public enum Items {
         NULL = 0,
@@ -34,8 +35,7 @@ public class Personaje : MonoBehaviour
 
     void Start()
     {
-        Array v = Enum.GetValues(typeof (Enfermedad.Enfermedades));
-        enfermedad = (Enfermedad.Enfermedades) v.GetValue(UnityEngine.Random.Range(1, v.Length));
+        
         if (armario == null)
         {
             armario = GameObject.Find("estanteria").GetComponent<Armario>();
@@ -50,13 +50,35 @@ public class Personaje : MonoBehaviour
 
     public void setActiveItem(Items item)
     {
-
-        if (activeItem != Items.NULL)
+        if(npcCount >= maxNpc)
+        {
+            if (nightShift == null)
+            {
+                // intentar recuperar una referencia válida en la escena
+                nightShift = FindFirstObjectByType<NightShift>();
+            }
+            
+            if (nightShift != null)
+            {
+                if ((int)item != (int)enfermedad)
+                {
+                    nightShift.ActivarNightShift(dead, true);
+                }
+                else
+                {
+                    nightShift.ActivarNightShift(dead, false);
+                }
+                npcCount = 0;
+                maxNpc += 1;
+            }
+            else
+            {
+                Debug.LogWarning($"MirrorInteraction: nightShift no asignado en Inspector ni encontrado en escena. GameObject: {gameObject.name}", this);
+            }
+        } else if (activeItem != Items.NULL)
         {
             armario.showItem(activeItem);
-        }
-
-        if (activeItem == item) {
+        } else if (activeItem == item) {
             armario.showItem(activeItem);
             activeItem = Items.NULL;
 
@@ -70,10 +92,16 @@ public class Personaje : MonoBehaviour
     public void nextNpc(GameObject old)
     {
         GameObject.Destroy(old);
-
-        GameObject.Instantiate(prefab);
-        npcCount++;
-
         setActiveItem(Items.NULL);
+        npcCount++;
+        if (npcCount >= maxNpc)
+        {
+            Array v = Enum.GetValues(typeof (Enfermedad.Enfermedades));
+            enfermedad = (Enfermedad.Enfermedades) v.GetValue(UnityEngine.Random.Range(1, v.Length));
+        }
+        else
+        {
+            GameObject.Instantiate(prefab);
+        }
     }
 }
