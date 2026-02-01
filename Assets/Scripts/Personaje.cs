@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Personaje : MonoBehaviour
 {
@@ -34,8 +35,6 @@ public class Personaje : MonoBehaviour
 
     void Start()
     {
-        Array v = Enum.GetValues(typeof (Enfermedad.Enfermedades));
-        enfermedad = (Enfermedad.Enfermedades) v.GetValue(UnityEngine.Random.Range(1, v.Length));
         if (armario == null)
         {
             armario = GameObject.Find("estanteria").GetComponent<Armario>();
@@ -71,9 +70,16 @@ public class Personaje : MonoBehaviour
     {
         GameObject.Destroy(old);
 
-        GameObject.Instantiate(prefab);
+        GameObject temp = GameObject.Instantiate(prefab);
+        temp.GetComponent<ScriptDialog>().leve = Random.Range(0,1) > 0.5;
         npcCount++;
 
         setActiveItem(Items.NULL);
+
+        if (npcCount == maxNpc)
+        {
+            Array v = Enum.GetValues(typeof(Enfermedad.Enfermedades));
+            enfermedad = (Enfermedad.Enfermedades)v.GetValue(UnityEngine.Random.Range(1, v.Length));
+        }
     }
 }
