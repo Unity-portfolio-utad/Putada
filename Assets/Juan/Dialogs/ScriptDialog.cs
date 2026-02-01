@@ -151,28 +151,58 @@ public class ScriptDialog : MonoBehaviour
         }
     }
 
+    // IEnumerator fadeIn()
+    // {
+    //     while (true)
+    //     {
+    //         yield return new WaitForSeconds(0.1f);
+    //         transform.position -= new Vector3(0.1f, 0f, 0);
+    //     }
+    //
+    //     transform.position = new Vector3(transform.position.x, 0.7f, transform.position.z);
+    // }
+    //
+    // IEnumerator fadeOut()
+    // {
+    //     while (transform.position.x < 3f)
+    //     {
+    //         yield return new WaitForSeconds(0.1f);
+    //         transform.position += new Vector3(0.1f, 0, 0);
+    //     }
+    //
+    //     transform.position = new Vector3(0.7f, transform.position.y, transform.position.z);
+    //     //Hacer que venga el siguiente
+    // }
+    
+    //Vamos a hacer el fade in y fade out con la opacidad del sprite renderer
     IEnumerator fadeIn()
     {
-        while (true)
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        while (opacity < 1.0f)
         {
             yield return new WaitForSeconds(0.1f);
-            transform.position -= new Vector3(0.1f, 0f, 0);
+            opacity += 0.1f;
+            sr.color = new Color(1.0f, 1.0f, 1.0f, opacity);
         }
-
-        transform.position = new Vector3(transform.position.x, 0.7f, transform.position.z);
+        opacity = 1.0f;
+        sr.color = new Color(1.0f, 1.0f, 1.0f, opacity);
+        ready = true;
     }
-
     IEnumerator fadeOut()
     {
-        while (transform.position.x < 3f)
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        while (opacity > 0.0f)
         {
             yield return new WaitForSeconds(0.1f);
-            transform.position += new Vector3(0.1f, 0, 0);
+            opacity -= 0.1f;
+            sr.color = new Color(1.0f, 1.0f, 1.0f, opacity);
         }
-
-        transform.position = new Vector3(0.7f, transform.position.y, transform.position.z);
+        opacity = 0.0f;
+        sr.color = new Color(1.0f, 1.0f, 1.0f, opacity);
         //Hacer que venga el siguiente
     }
+    
+    //Haz que funcione correctamente el fade ou
 
     void NextLine()
     {
@@ -193,8 +223,9 @@ public class ScriptDialog : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (perj.activeItem == Personaje.Items.NULL && !isDialogActive && ready)
+        if (perj.activeItem == Personaje.Items.NULL )
         {
+            if (!ready && !isDialogActive) return;
             isDialogActive = true;
             comenzarDialogo();
         }
@@ -203,6 +234,5 @@ public class ScriptDialog : MonoBehaviour
         {
             StartCoroutine(fadeOut());
         }
-
     }
 }
