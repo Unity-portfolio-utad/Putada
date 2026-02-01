@@ -3,24 +3,32 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine.InputSystem;
+using Unity.VisualScripting;
+using NUnit.Framework.Constraints;
 
 
 public class ScriptDialog : MonoBehaviour
 {
-    public TextMeshProUGUI textComponent;
+    private bool ready = false;
+
+    private float opacity = 0.0f;
+
+    private bool isDialogActive = false;
+    public TextMeshPro textComponent;
     public float textSpeed = 0.05f;
 
     public List<SintomaData> baseDeDatosSintomas;
 
-    public List<Enfermedad.Enfermedades> enfermedadesGraves;
-    public List<Enfermedad.Enfermedades> enfermedadesLeves;
+    [SerializeField]
+    private Personaje perj;
 
-    public bool leve = false; 
-    public Enfermedad.Enfermedades nakim; 
+    public bool leve = false;
+    public Enfermedad.Enfermedades nakim;
 
     private List<string> lines = new List<string>();
-    private int index;
-    private  Enfermedad enfermedad;
+    private int index = -1;
+    [SerializeField]
+    private Enfermedad enfermedad;
 
     public enum TipoSintoma { A_Calor, B_Flujos, C_Cuerpo, D_Dolor, E_Conducta }
 
@@ -29,21 +37,23 @@ public class ScriptDialog : MonoBehaviour
     [System.Serializable]
     public struct SintomaData
     {
-        public TipoSintoma tipo;
+        public Enfermedad.TipoSintoma tipo;
         public TextAsset archivoTexto;
     }
 
- 
+
 
     void Start()
     {
+        GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f, 0);
+        StartCoroutine(fadeIn());
         textComponent.text = string.Empty;
         GenerarDialogoEnfermedad();
-        comenzarDialogo();
     }
 
     void Update()
     {
+        if (index == -1 || lines.Count == 0) return;
         if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
         {
             if (textComponent.text == lines[index])
@@ -66,41 +76,39 @@ public class ScriptDialog : MonoBehaviour
 
         if (leve)
         {
-            if (enfermedadesLeves.Count == 0)
-            {
-                return;
-            }
-            enfermedadElegida = enfermedadesLeves[UnityEngine.Random.Range(0, enfermedadesLeves.Count)];
+            enfermedadElegida = Enfermedad.leves[UnityEngine.Random.Range(0, Enfermedad.leves.Length)];
         }
         else
         {
-            if (enfermedadesGraves.Count == 0)
-            {
-                return;
-            }
-            enfermedadElegida = enfermedadesGraves[UnityEngine.Random.Range(0, enfermedadesGraves.Count)];
+            enfermedadElegida = Enfermedad.graves[UnityEngine.Random.Range(0, Enfermedad.graves.Length)];
         }
 
-        nakim = enfermedadElegida;
-        
+        if (nakim == Enfermedad.Enfermedades.NULL) {
+            nakim = enfermedadElegida;
+        }
+
 
         List<Enfermedad.TipoSintoma> sintomasMezclados = new List<Enfermedad.TipoSintoma>(enfermedad.getSintomas(nakim));
         Shuffle(sintomasMezclados);
-
-        foreach (TipoSintoma tipo in sintomasMezclados)
+        Debug.LogWarning("sfefvr");
+        foreach (Enfermedad.TipoSintoma tipo in sintomasMezclados)
         {
+            Debug.LogWarning("dentro");
             string frase = ObtenerFraseRandomDeSintoma(tipo);
             if (!string.IsNullOrEmpty(frase))
             {
+                Debug.LogWarning("Hola");
                 lines.Add(frase);
             }
         }
     }
 
-    string ObtenerFraseRandomDeSintoma(TipoSintoma tipoBuscado)
+    string ObtenerFraseRandomDeSintoma(Enfermedad.TipoSintoma tipoBuscado)
     {
+        Debug.LogWarning("A");
         foreach (var data in baseDeDatosSintomas)
         {
+            Debug.LogWarning("h");
             if (data.tipo == tipoBuscado && data.archivoTexto != null)
             {
                 string[] posiblesFrases = data.archivoTexto.text.Split(new char[] { '\n', '\r' }, System.StringSplitOptions.RemoveEmptyEntries);
@@ -143,6 +151,29 @@ public class ScriptDialog : MonoBehaviour
         }
     }
 
+    IEnumerator fadeIn()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(0.1f);
+            transform.position -= new Vector3(0.1f, 0f, 0);
+        }
+
+        transform.position = new Vector3(transform.position.x, 0.7f, transform.position.z);
+    }
+
+    IEnumerator fadeOut()
+    {
+        while (transform.position.x < 3f)
+        {
+            yield return new WaitForSeconds(0.1f);
+            transform.position += new Vector3(0.1f, 0, 0);
+        }
+
+        transform.position = new Vector3(0.7f, transform.position.y, transform.position.z);
+        //Hacer que venga el siguiente
+    }
+
     void NextLine()
     {
         if (index < lines.Count - 1)
@@ -153,7 +184,25 @@ public class ScriptDialog : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            isDialogActive = false;
+            textComponent.SetText("");
+            GenerarDialogoEnfermedad();
+            // gameObject.SetActive(false);
         }
+    }
+
+    void OnMouseDown()
+    {
+        if (perj.activeItem == Personaje.Items.NULL && !isDialogActive && ready)
+        {
+            isDialogActive = true;
+            comenzarDialogo();
+        }
+
+        else
+        {
+            StartCoroutine(fadeOut());
+        }
+
     }
 }

@@ -18,7 +18,7 @@ public class Personaje : MonoBehaviour
         CERILLAS= 7
     }
 
-    private Items activeItem;
+    public Items activeItem;
 
     void Start()
     {

@@ -5,14 +5,14 @@ public class Enfermedad : MonoBehaviour
 {
 
     public enum TipoSintoma { A_Calor, B_Flujos, C_Cuerpo, D_Dolor, E_Conducta }
-    public enum Enfermedades { CATARRO, SARPULLIDO, RAMAS_BRAZOS, OTITIS, OJOS_CARACOL, LEPRA, BICHOS_OJOS }
+    public enum Enfermedades {NULL, CATARRO, SARPULLIDO, RAMAS_BRAZOS, OTITIS, OJOS_CARACOL, LEPRA, BICHOS_OJOS }
 
     Dictionary<Enfermedades, TipoSintoma[]> enfermedades = new Dictionary<Enfermedades, TipoSintoma[]>();
 
-    public Enfermedades[] leves;
-
+    static public Enfermedades[] leves = {Enfermedades.CATARRO, Enfermedades.OTITIS, Enfermedades.SARPULLIDO};
+    static public Enfermedades[] graves = {Enfermedades.RAMAS_BRAZOS, Enfermedades.LEPRA, Enfermedades.OJOS_CARACOL};
     // Start is called once beforez the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
         enfermedades[Enfermedades.CATARRO] = new TipoSintoma[] { TipoSintoma.A_Calor, TipoSintoma.B_Flujos, TipoSintoma.D_Dolor };
         enfermedades[Enfermedades.SARPULLIDO] = new TipoSintoma[] { TipoSintoma.A_Calor, TipoSintoma.B_Flujos, TipoSintoma.C_Cuerpo };
