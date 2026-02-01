@@ -69,7 +69,9 @@ public class MirrorInteraction : MonoBehaviour
         Cursor.lockState = CursorLockMode.None; Cursor.visible = true;
         isViewing = false;
         
+        Personaje personaje = FindAnyObjectByType<Personaje>();
+        
         NightShift fastMSG = FindAnyObjectByType<NightShift>();
-        if (fastMSG != null) fastMSG.FastMsg("Let see if I can cure myself...");
+        if (fastMSG != null && personaje.npcCount >= personaje.maxNpc) fastMSG.FastMsg("Let see if I can cure myself...");
     }
 }

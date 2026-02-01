@@ -26,7 +26,7 @@ public class ScriptDialog : MonoBehaviour
     [SerializeField]
     private Personaje perj;
 
-    public bool leve = Random.value > 0.5;
+    public bool leve = false;
     public Enfermedad.Enfermedades nakim;
 
     private List<string> lines = new List<string>();
@@ -49,6 +49,7 @@ public class ScriptDialog : MonoBehaviour
 
     void Start()
     {
+        leve = Random.value > 0.5f;
         perj = GameObject.FindFirstObjectByType<Personaje>();
         enfermedad = GameObject.FindFirstObjectByType<Enfermedad>();
         GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f, 0);
