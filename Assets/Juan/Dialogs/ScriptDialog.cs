@@ -22,7 +22,7 @@ public class ScriptDialog : MonoBehaviour
     [SerializeField]
     private Personaje perj;
 
-    public bool leve = false;
+    public bool leve = Random.value > 0.5;
     public Enfermedad.Enfermedades nakim;
 
     private List<string> lines = new List<string>();
