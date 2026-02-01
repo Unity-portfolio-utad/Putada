@@ -11,9 +11,6 @@
 [RequireComponent(typeof(Collider))]
 public class MirrorInteraction : MonoBehaviour
 {
-    public string disabledMessage = "Desde la enfermedad del caracol no te puedes ni mirar a la cara...";
-
-    [SerializeField] PatientController patientController;
     [SerializeField] SpriteRenderer mirrorSprite;
     public Sprite[] pics;
     private int currentPic = 0;
@@ -45,6 +42,7 @@ public class MirrorInteraction : MonoBehaviour
         if (mirrorSprite != null && pics != null && currentPic >= 0 && currentPic < pics.Length)
             mirrorSprite.sprite = pics[currentPic];
         isViewing = true;
+        
         if (camMovement != null) camMovement.enabled = false;
         Cursor.lockState = CursorLockMode.Locked; Cursor.visible = false;
         if (mirrorSprite != null) mirrorSprite.gameObject.SetActive(true);
@@ -70,5 +68,8 @@ public class MirrorInteraction : MonoBehaviour
         if (camMovement != null) camMovement.enabled = true;
         Cursor.lockState = CursorLockMode.None; Cursor.visible = true;
         isViewing = false;
+        
+        NightShift fastMSG = FindAnyObjectByType<NightShift>();
+        if (fastMSG != null) fastMSG.FastMsg("Let see if I can cure myself...");
     }
 }

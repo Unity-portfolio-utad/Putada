@@ -181,6 +181,7 @@ public class ScriptDialog : MonoBehaviour
     //Vamos a hacer el fade in y fade out con la opacidad del sprite renderer
     IEnumerator fadeIn()
     {
+        yield return new WaitForSeconds(3f);
         SpriteRenderer sr = GetComponent<SpriteRenderer>();
         while (opacity < 1.0f)
         {
@@ -244,7 +245,7 @@ public class ScriptDialog : MonoBehaviour
         {
             ready = false;
             StartCoroutine(fadeOut());
-            if ((int)perj.activeItem == (int)nakim)
+            if ((int)perj.activeItem != (int)nakim)
             {
                 perj.dead++;
             }
