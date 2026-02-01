@@ -15,6 +15,7 @@ public class MirrorInteraction : MonoBehaviour
 
     [SerializeField] PatientController patientController;
     [SerializeField] SpriteRenderer mirrorSprite;
+    [SerializeField] NightShift nightShift;
     public Sprite[] pics;
     private int currentPic = 0;
     bool isViewing = false;
@@ -26,10 +27,44 @@ public class MirrorInteraction : MonoBehaviour
         {
             var c = mirrorSprite.color; c.a = 0f; mirrorSprite.color = c; mirrorSprite.gameObject.SetActive(false);
         }
+
+        // Si no se asignó nightShift en el inspector, intentar asignarlo aquí (incluye objetos inactivos)
+        if (nightShift == null)
+        {
+            nightShift = FindFirstObjectByType<NightShift>();
+            if (nightShift == null)
+            {
+                var all = Resources.FindObjectsOfTypeAll<NightShift>();
+                if (all != null && all.Length > 0)
+                    nightShift = all[0];
+            }
+
+            if (nightShift == null)
+            {
+                Debug.LogWarning($"MirrorInteraction: nightShift no asignado ni encontrado en escena ({gameObject.name}). Asigna la referencia en el Inspector.");
+            }
+        }
+        
+        
     }
 
     void OnMouseDown()
     {
+        if (nightShift == null)
+        {
+            // intentar recuperar una referencia válida en la escena
+            nightShift = FindFirstObjectByType<NightShift>();
+        }
+
+        if (nightShift != null)
+        {
+            nightShift.ActivarNightShift(5);
+        }
+        else
+        {
+            Debug.LogWarning($"MirrorInteraction: nightShift no asignado en Inspector ni encontrado en escena. GameObject: {gameObject.name}", this);
+        }
+
         if (isViewing) return;
         
         // Usar el espejo normalmente
@@ -41,9 +76,10 @@ public class MirrorInteraction : MonoBehaviour
         Debug.Log("Usando espejo...");
 
         currentPic = 0;//(int)patientController.enfermedad;
-        currentPic = (pics != null && pics.Length > 0) ? UnityEngine.Random.Range(0, pics.Length-1) : 0;
+        currentPic = (pics != null && pics.Length > 0) ? UnityEngine.Random.Range(0, pics.Length) : 0;
         
-        mirrorSprite.sprite = pics[currentPic];
+        if (mirrorSprite != null && pics != null && currentPic >= 0 && currentPic < pics.Length)
+            mirrorSprite.sprite = pics[currentPic];
         isViewing = true;
         if (camMovement != null) camMovement.enabled = false;
         Cursor.lockState = CursorLockMode.Locked; Cursor.visible = false;
@@ -72,6 +108,3 @@ public class MirrorInteraction : MonoBehaviour
         isViewing = false;
     }
 }
-
-
-
