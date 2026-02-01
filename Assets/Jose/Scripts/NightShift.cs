@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,10 +11,12 @@ public class NightShift : MonoBehaviour
 
     //Un canva que se activa al morir
     [SerializeField] private GameObject canvas;
+    [SerializeField] private GameObject canvasVida;
     [SerializeField] private GameObject canvasRapido;
 
     //Tiene un texto que dice cuantos pacientes han muerto
     [SerializeField] private TMPro.TextMeshProUGUI textoMuertes;
+    [SerializeField] private TMPro.TextMeshProUGUI textoVida;
     [SerializeField] private TMPro.TextMeshProUGUI textoRapido;
     private int currentIndex;
     private int nextIndex;
@@ -39,16 +42,17 @@ public class NightShift : MonoBehaviour
     private System.Collections.IEnumerator FadeCanvasAndChangeAudio(int muertes, bool death)
     {
         deathActivated = death;
-        //Activar canvas
-        canvas.SetActive(true);
+        GameObject activeCanvas = deathActivated ? canvas : canvasVida;
+        TextMeshProUGUI textCanvas = deathActivated ? textoMuertes : textoVida;
+        
 
         //Fade in
         float duration = 2f; // Duración del fade
         float currentTime = 0f;
-        CanvasGroup canvasGroup = canvas.GetComponent<CanvasGroup>();
+        CanvasGroup canvasGroup = activeCanvas.GetComponent<CanvasGroup>();
         if (canvasGroup == null)
         {
-            canvasGroup = canvas.AddComponent<CanvasGroup>();
+            canvasGroup = activeCanvas.AddComponent<CanvasGroup>();
 
         }
 
@@ -64,11 +68,11 @@ public class NightShift : MonoBehaviour
         if(!deathActivated)
         {
             //Mostrar texto
-            textoMuertes.text = "";
+            textCanvas.text = "";
             string fullText = "Patients deceased tonight: " + muertes;
             for (int i = 0; i < fullText.Length; i++)
             {
-                textoMuertes.text += fullText[i];
+                textCanvas.text += fullText[i];
                 yield return new WaitForSeconds(0.1f);
             }
 
@@ -95,16 +99,16 @@ public class NightShift : MonoBehaviour
             }
 
             //Desactivar canvas
-            canvas.SetActive(false);
-            textoMuertes.text = "";
+            activeCanvas.SetActive(false);
+            textCanvas.text = "";
         }else if(deathActivated)
         {
             //Mostrar texto
-            textoMuertes.text = "";
+            textCanvas.text = "";
             string fullText = "You DIED, choose wisely next time.";
             for (int i = 0; i < fullText.Length; i++)
             {
-                textoMuertes.text += fullText[i];
+                textCanvas.text += fullText[i];
                 yield return new WaitForSeconds(0.1f);
             }
 

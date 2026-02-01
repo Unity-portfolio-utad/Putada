@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -15,6 +16,7 @@ public class ObjetoRecogible : MonoBehaviour
     
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioClip pickUpSound;
+    [SerializeField] AudioClip actionSound;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -41,6 +43,22 @@ public class ObjetoRecogible : MonoBehaviour
         if (audioSource != null && pickUpSound != null)
         {
             audioSource.PlayOneShot(pickUpSound);
+        }
+        if(personaje.npcCount == personaje.maxNpc)
+        {
+            StartCoroutine(PlayActionSound());
+            
+        }
+    }
+
+    private IEnumerator PlayActionSound()
+    {
+        if (audioSource != null && actionSound != null)
+        {
+            audioSource.PlayOneShot(actionSound);
+            yield return new WaitForSeconds(3);
+            audioSource.Stop();
+            
         }
     }
 }
