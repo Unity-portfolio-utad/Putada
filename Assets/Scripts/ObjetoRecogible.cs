@@ -12,6 +12,9 @@ public class ObjetoRecogible : MonoBehaviour
 
     [SerializeField]
     private GameObject objeto;
+    
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip pickUpSound;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,5 +38,9 @@ public class ObjetoRecogible : MonoBehaviour
     {
         personaje.setActiveItem(itemType);
         Debug.Log(itemType);
+        if (audioSource != null && pickUpSound != null)
+        {
+            audioSource.PlayOneShot(pickUpSound);
+        }
     }
 }

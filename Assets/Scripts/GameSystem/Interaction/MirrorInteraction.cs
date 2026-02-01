@@ -41,7 +41,7 @@ public class MirrorInteraction : MonoBehaviour
         Debug.Log("Usando espejo...");
 
         currentPic = 0;//(int)patientController.enfermedad;
-        currentPic = (pics != null && pics.Length > 0) ? UnityEngine.Random.Range(0, pics.Length) : 0;
+        currentPic = (pics != null && pics.Length > 0) ? UnityEngine.Random.Range(0, pics.Length-1) : 0;
         
         mirrorSprite.sprite = pics[currentPic];
         isViewing = true;
@@ -61,7 +61,7 @@ public class MirrorInteraction : MonoBehaviour
         
         yield return new WaitForSeconds(2);
         t = 0f;
-        while (t < 2f)
+        while (t < 5f)
         {
             t += Time.deltaTime; if (mirrorSprite != null){var c=mirrorSprite.color;c.a=Mathf.Lerp(target,0f,t/5f);mirrorSprite.color=c;} yield return null;
         }
