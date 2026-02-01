@@ -142,6 +142,8 @@ public class Personaje : MonoBehaviour
         
         setActiveItem(Items.NULL);
 
+        GameObject temp = GameObject.Instantiate(prefab[Random.Range(0, prefab.Length)]);
+        temp.GetComponent<ScriptDialog>().leve = Random.value > 0.5f;
         
         npcCount++;
         if (npcCount >= maxNpc)
