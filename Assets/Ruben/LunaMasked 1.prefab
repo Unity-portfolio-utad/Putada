@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 1896251592122729754}
   - component: {fileID: 8591562191571361279}
   m_Layer: 0
-  m_Name: LunaMasked
+  m_Name: LunaMasked 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -210,7 +210,7 @@ Transform:
   m_GameObject: {fileID: 8941787852075551568}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.93, y: 0.7375, z: -3.56}
+  m_LocalPosition: {x: 0.7073161, y: 0.3199571, z: -4.613163}
   m_LocalScale: {x: 0.9792, y: 0.9792, z: 0.9792}
   m_ConstrainProportionsScale: 0
   m_Children:
