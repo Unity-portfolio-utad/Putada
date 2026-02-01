@@ -324,7 +324,7 @@ MonoBehaviour:
   - tipo: 4
     archivoTexto: {fileID: 4900000, guid: 876fa428d4473bfb58a8c0395ace8b25, type: 3}
   perj: {fileID: 0}
-  leve: 0
+  leve: 1
   nakim: 0
   enfermedad: {fileID: 0}
 --- !u!65 &7970132628736890593

@@ -1,4 +1,6 @@
+using System;
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class MenuDirector : MonoBehaviour
@@ -23,6 +25,8 @@ public class MenuDirector : MonoBehaviour
 
     [Header("Travel")]
     public float travelForwardDistance = 1.5f;
+
+    [SerializeField] private GameObject canvas;
 
     bool busy;
 
@@ -58,6 +62,20 @@ public class MenuDirector : MonoBehaviour
     {
         if (busy) return;
         StartCoroutine(PlaySequence());
+    }
+    
+    public void OnCreditsPressed()
+    {
+        //Activate canvas
+        canvas.SetActive(true);
+        //En 5 segundos desactiva el canvas
+        StartCoroutine(DisableCanvasAfterTime(5f));
+    }
+
+    private IEnumerator DisableCanvasAfterTime(float f)
+    {
+        yield return new WaitForSeconds(f);
+        canvas.SetActive(false);
     }
 
     public void OnQuitPressed()
