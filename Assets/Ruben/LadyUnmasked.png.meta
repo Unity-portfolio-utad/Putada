@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,16 +34,16 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -52,9 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -69,10 +69,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,12 +95,870 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: LadyUnmasked_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf7998ba03d98248932d0d7af6a1725
+      internalID: 1214532099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_1
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3f0e3c96dac744caf499a6b939a3f9
+      internalID: -8442398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_2
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb502c0b897329d418d4818799a8812e
+      internalID: -1803028373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_3
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38bf6d9ac661dc4419c401b30fc27dd5
+      internalID: -573884234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_4
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769b916ce84eaba4897b4ef46a28d008
+      internalID: -351287885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_5
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b82745ca5eac52458cb85aa06cf6b1e
+      internalID: 110604531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_6
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533d5d24ac1888d4ebdd7659edd4a52d
+      internalID: 1139242451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f86d717698a93428f6d9fdbf63895c
+      internalID: -542450206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_8
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b760c1269e9deb04bae8430f7b4782ca
+      internalID: -650148026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_9
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd3185c21ea3e24589fbfac7d2dc86d
+      internalID: -800311667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_10
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a64ddfb0fd076342a3d9b808b62f633
+      internalID: 331851736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_11
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6050bd3eb07ee45b01c920670b2cfd
+      internalID: 1792964385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_12
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12412ecdb277b7446a9db611b06a19d5
+      internalID: -1047588413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_13
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061247aa8974bc24c9be292c62ac188f
+      internalID: -223241838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0024b967fe89204aa0b56cea4981d11
+      internalID: -1680015936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_15
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a888d6ad8b3665945bf2afd6d6fae0e7
+      internalID: -1538581002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_16
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28617f0feabae214d82860cf1b2acafb
+      internalID: -633227484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_17
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb0495a8627b064faa1d9de8535c791
+      internalID: 503404114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_18
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75525a07e4b72734cbae5a8156c8efd3
+      internalID: 1584107868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_19
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b54c3428fed401745a51a1e7b577f531
+      internalID: -116187318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_20
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba2758100643db42ba25923ff367d35
+      internalID: -1023001934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237dcba4d81c2634d81d1d8006943a0e
+      internalID: 1427219006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_22
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d400160ec74b71440a0a32dec2064c5c
+      internalID: 216508113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_23
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48523650d5cfef4aa9709ee5bfeb4b6
+      internalID: -1546601279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_24
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4f5ef713dad854d88c4e42a666d67c
+      internalID: -867254254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_25
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0808dd2af370a045b601236812f1a38
+      internalID: -1964828798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_26
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc80596131099046984faf0d97e097f
+      internalID: -2073710368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_27
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14fe265a0451460439029e77cb083ce8
+      internalID: -2110100146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a41d3956582b094fa341c388f05f8fc
+      internalID: 1520746838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_29
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1046380fe235bc043a2e614c61f7e43b
+      internalID: -624190462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_30
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 545619fbff8876f43809122e9a315a42
+      internalID: 522188296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_31
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd98c386150d4bd4b91ff049c9bea4f6
+      internalID: 599367723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_32
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439af4c643bdb744bbb2ecc0bafdcfb1
+      internalID: -876700220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_33
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6e434670742ca4fa46fa2ce329c1b8
+      internalID: 1170217145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_34
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704e79fa69784c9469672093514616b6
+      internalID: -29611674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a634a660e41b6824a9ff8aa408aa563d
+      internalID: -514122514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_36
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 0
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3961c73d42f5ae8448bf9ac07dbdfc4f
+      internalID: 412633152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_37
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 0
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b88430c2dcd5f444a042fa3b0c981bc
+      internalID: 1636465765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyUnmasked_38
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 0
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c9fd7ebef7d4f4ea8064bf392c0cdc
+      internalID: 258939799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 42029da6f8a45ff4494b269a0d6158bf
     internalID: 0
     vertices: []
     indices: 
@@ -108,8 +966,52 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
-    nameFileIdTable: {}
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":6.0},"gridSpriteSize":{"x":620.0,"y":1080.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      LadyUnmasked_0: 1214532099
+      LadyUnmasked_1: -8442398
+      LadyUnmasked_10: 331851736
+      LadyUnmasked_11: 1792964385
+      LadyUnmasked_12: -1047588413
+      LadyUnmasked_13: -223241838
+      LadyUnmasked_14: -1680015936
+      LadyUnmasked_15: -1538581002
+      LadyUnmasked_16: -633227484
+      LadyUnmasked_17: 503404114
+      LadyUnmasked_18: 1584107868
+      LadyUnmasked_19: -116187318
+      LadyUnmasked_2: -1803028373
+      LadyUnmasked_20: -1023001934
+      LadyUnmasked_21: 1427219006
+      LadyUnmasked_22: 216508113
+      LadyUnmasked_23: -1546601279
+      LadyUnmasked_24: -867254254
+      LadyUnmasked_25: -1964828798
+      LadyUnmasked_26: -2073710368
+      LadyUnmasked_27: -2110100146
+      LadyUnmasked_28: 1520746838
+      LadyUnmasked_29: -624190462
+      LadyUnmasked_3: -573884234
+      LadyUnmasked_30: 522188296
+      LadyUnmasked_31: 599367723
+      LadyUnmasked_32: -876700220
+      LadyUnmasked_33: 1170217145
+      LadyUnmasked_34: -29611674
+      LadyUnmasked_35: -514122514
+      LadyUnmasked_36: 412633152
+      LadyUnmasked_37: 1636465765
+      LadyUnmasked_38: 258939799
+      LadyUnmasked_39: -1517183875
+      LadyUnmasked_4: -351287885
+      LadyUnmasked_40: -1798218837
+      LadyUnmasked_41: 556298613
+      LadyUnmasked_5: 110604531
+      LadyUnmasked_6: 1139242451
+      LadyUnmasked_7: -542450206
+      LadyUnmasked_8: -650148026
+      LadyUnmasked_9: -800311667
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

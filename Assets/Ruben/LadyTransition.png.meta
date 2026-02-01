@@ -34,16 +34,16 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 0
     wrapV: 0
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -54,7 +54,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -69,10 +69,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,12 +95,870 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: LadyTransition_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 875681dffe6da6a45ad423b5b14166a5
+      internalID: -1487881523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_1
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7072e1a4a296d6940a32ef3a44b1c76e
+      internalID: 1153912253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_2
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa438d2eea27b34196cfcfadfc52ecc
+      internalID: -408594862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_3
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8519e178ed1b63849832cc9f6aaace2a
+      internalID: 1298448029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_4
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8499bcdaea46a7f4f98a462d94c54686
+      internalID: 93658452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_5
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de4a7153141d3f469ac40f17fb36663
+      internalID: -1573765217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_6
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 016692a8cd46f234080383eab68d7cd4
+      internalID: 1190735623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b00cebf2934a34fa17b7caa0ccc1c3
+      internalID: -402865459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_8
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bffd7656e78a55b46a3c97b4d4a5b938
+      internalID: 1171966626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_9
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c209a2c4cd947f47a31b6d25033f898
+      internalID: 966329842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_10
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7264a4aaba959744abaab21d431e504e
+      internalID: -1826170602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_11
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc42effd4fd661144998bb1688c8b0b9
+      internalID: -1428957209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_12
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d9867aaaaebcf548bbde7bd0a937b8f
+      internalID: -115492254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_13
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd74bfcd58e143c4f897d24eb15d6804
+      internalID: 177446662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee7bda316eb18f4ea8d49685553cbfc
+      internalID: 1744051718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_15
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5f6a7be063ed04987ce37d6ae9daf1
+      internalID: -1173281486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_16
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92d113eb80c61a48befd85f7765aa37
+      internalID: -926611670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_17
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0859cfbb98eed8544b16f9f295294ada
+      internalID: -2001843820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_18
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e05be7514224e34ab964fc2f623a147
+      internalID: 1550397949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_19
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13714512115c8ae4eb54d8547673dad0
+      internalID: 1172079677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_20
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef7080e83ec55a40b9e41a7858ee493
+      internalID: 1120848752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0717d43a92803044894e1fb83e8d141
+      internalID: -347535179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_22
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2593518bb5b4b7c449fd2cbf3f03a16f
+      internalID: -1668489242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_23
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e1baa7d94235743981d09bc8d1fb96
+      internalID: -679024090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_24
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a58c88218e479145baa0e76704238f5
+      internalID: 597483514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_25
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef14625cd5e4cf94487c01f1dc0f05f9
+      internalID: -1765067662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_26
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae259e3efa4cf34e92cbf7395816dc1
+      internalID: -1003354652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_27
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90a2e7b5394d6443b597d4403fe4dc8
+      internalID: -1329169564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f6cbfa92534e342b5e037164b67a9b
+      internalID: 1469048860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_29
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0243151c1f0f1f9448d9774fe6da93f0
+      internalID: -1154768725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_30
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a290b338d761d5640a8263c9f9e6b1aa
+      internalID: -1231799992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_31
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db79218e38e2164f9c9d5551665b21e
+      internalID: 514392404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_32
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d3cc3f34c6d38948a13ee9dca7542b6
+      internalID: -1754941872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_33
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce46951d3a480f44ab390f8a5cb8356
+      internalID: 341467072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_34
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b010cc467a795db4a9d2dab407754d3b
+      internalID: -206337894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5077ea770a848541ba73d411432d135
+      internalID: -1624285855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_36
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 0
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6351d212c5159324293461d574936635
+      internalID: 1768258191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_37
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 0
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 489d968690ccc814cb573a37b4cad558
+      internalID: -2000436566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadyTransition_38
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 0
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2972e16089b5644aabfb773aba4c25e
+      internalID: -332584817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7a3365b8c38328a46a6fad020e0adaa7
     internalID: 0
     vertices: []
     indices: 
@@ -108,8 +966,52 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
-    nameFileIdTable: {}
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":6.0},"gridSpriteSize":{"x":620.0,"y":1080.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      LadyTransition_0: -1487881523
+      LadyTransition_1: 1153912253
+      LadyTransition_10: -1826170602
+      LadyTransition_11: -1428957209
+      LadyTransition_12: -115492254
+      LadyTransition_13: 177446662
+      LadyTransition_14: 1744051718
+      LadyTransition_15: -1173281486
+      LadyTransition_16: -926611670
+      LadyTransition_17: -2001843820
+      LadyTransition_18: 1550397949
+      LadyTransition_19: 1172079677
+      LadyTransition_2: -408594862
+      LadyTransition_20: 1120848752
+      LadyTransition_21: -347535179
+      LadyTransition_22: -1668489242
+      LadyTransition_23: -679024090
+      LadyTransition_24: 597483514
+      LadyTransition_25: -1765067662
+      LadyTransition_26: -1003354652
+      LadyTransition_27: -1329169564
+      LadyTransition_28: 1469048860
+      LadyTransition_29: -1154768725
+      LadyTransition_3: 1298448029
+      LadyTransition_30: -1231799992
+      LadyTransition_31: 514392404
+      LadyTransition_32: -1754941872
+      LadyTransition_33: 341467072
+      LadyTransition_34: -206337894
+      LadyTransition_35: -1624285855
+      LadyTransition_36: 1768258191
+      LadyTransition_37: -2000436566
+      LadyTransition_38: -332584817
+      LadyTransition_39: 515880400
+      LadyTransition_4: 93658452
+      LadyTransition_40: 2103908741
+      LadyTransition_41: 76035919
+      LadyTransition_5: -1573765217
+      LadyTransition_6: 1190735623
+      LadyTransition_7: -402865459
+      LadyTransition_8: 1171966626
+      LadyTransition_9: 966329842
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

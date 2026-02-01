@@ -34,16 +34,16 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 0
     wrapV: 0
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -54,7 +54,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -69,10 +69,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,12 +95,716 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: DamaUnmasked_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47399d1c5fe2773478d0e00ecac5f68a
+      internalID: 1605690814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_1
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb2752a7693aee4b83b8ddb7a391645
+      internalID: -253194442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_2
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e6c523fac9f2e4a8af6f0663be8461
+      internalID: 1679279174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_3
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3cfff0295b78aa479f09ec1ee92e9a4
+      internalID: -1231472309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_4
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07859b4a824a5ae438a6fad4eb2f32c1
+      internalID: -2137442367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_5
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 5400
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0375520ee96c7934a8c918acb0bfd1ac
+      internalID: -1822929177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 912490bf0b4d0be469db9b9b592421f2
+      internalID: 1023449262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_7
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7249a8fc33b31cb419cb5f305257c974
+      internalID: -143247552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_8
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26648b867ad84344caf78afd622cb03f
+      internalID: 34168887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_9
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b49977a2e0215449f1859ef7a724e5
+      internalID: -1095977993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_10
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a40d96ee0c891e47a6a8363c79027e0
+      internalID: -1911511992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_11
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 4320
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e202c0dee1d1340b7826b6fca75ef2
+      internalID: 364604160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d06e5c938e72ac46b92771cb0322094
+      internalID: 281921019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_13
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc333b16a6541b41a06a8976d0f9a86
+      internalID: 1272054583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_14
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94037bba51179eb42852773f58306c1b
+      internalID: -1947432129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_15
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5819c96e5f63d4ea28c1e5282dd753
+      internalID: -149866928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_16
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643615ef9c138184892af80b6f506f28
+      internalID: 988915921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_17
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 3240
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b558776734135f341a4df9d782daf418
+      internalID: -151336959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d737533ec5fcd4ca74cf192def9e4a
+      internalID: 1203917318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_19
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c122411f8b54441adb2533f8a392a6
+      internalID: 2079651517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_20
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917a4633dec508940b6d27f614a7bf1a
+      internalID: 1866731545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_21
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6850013000dc9448d63c7d32677c96
+      internalID: 656306767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_22
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35ba88a71bcf4e4c9dd29a01c9d4b39
+      internalID: 2128160233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_23
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 2160
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a7e9a7f8b619d4da44527bf0ddaa26
+      internalID: -2124276963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c972fb6131864646b23a7d3ab8e9cbc
+      internalID: -1243828673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_25
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c05854b8c0d6a46947fbe8672b9a69
+      internalID: -1908188716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_26
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94df59d6b9d759438de1460f4d42958
+      internalID: 1163760529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_27
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7151f8c3a316e4e807aa4c481d2326
+      internalID: 1783815950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_28
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44fa2e36e7355c428f4b375f214d899
+      internalID: 1270232433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_29
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 1080
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed1bcf218e110f4f96dba1708f9bec6
+      internalID: -841935331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b86396335ca8a142a94097d9733f295
+      internalID: -702086440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DamaUnmasked_31
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 0
+        width: 620
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff49a01c093874449c259f7cc34afca
+      internalID: 1223219358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1d976323ead50864bb12fd372b18797e
     internalID: 0
     vertices: []
     indices: 
@@ -108,8 +812,46 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
-    nameFileIdTable: {}
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":6.0},"gridSpriteSize":{"x":620.0,"y":1080.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      DamaUnmasked_0: 1605690814
+      DamaUnmasked_1: -253194442
+      DamaUnmasked_10: -1911511992
+      DamaUnmasked_11: 364604160
+      DamaUnmasked_12: 281921019
+      DamaUnmasked_13: 1272054583
+      DamaUnmasked_14: -1947432129
+      DamaUnmasked_15: -149866928
+      DamaUnmasked_16: 988915921
+      DamaUnmasked_17: -151336959
+      DamaUnmasked_18: 1203917318
+      DamaUnmasked_19: 2079651517
+      DamaUnmasked_2: 1679279174
+      DamaUnmasked_20: 1866731545
+      DamaUnmasked_21: 656306767
+      DamaUnmasked_22: 2128160233
+      DamaUnmasked_23: -2124276963
+      DamaUnmasked_24: -1243828673
+      DamaUnmasked_25: -1908188716
+      DamaUnmasked_26: 1163760529
+      DamaUnmasked_27: 1783815950
+      DamaUnmasked_28: 1270232433
+      DamaUnmasked_29: -841935331
+      DamaUnmasked_3: -1231472309
+      DamaUnmasked_30: -702086440
+      DamaUnmasked_31: 1223219358
+      DamaUnmasked_32: -417190882
+      DamaUnmasked_33: 1867509952
+      DamaUnmasked_34: 857053955
+      DamaUnmasked_35: 561179361
+      DamaUnmasked_4: -2137442367
+      DamaUnmasked_5: -1822929177
+      DamaUnmasked_6: 1023449262
+      DamaUnmasked_7: -143247552
+      DamaUnmasked_8: 34168887
+      DamaUnmasked_9: -1095977993
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
