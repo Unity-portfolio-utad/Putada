@@ -17,6 +17,8 @@ public class ScriptDialog : MonoBehaviour
 
     public List<SintomaData> baseDeDatosSintomas;
 
+    Animator anim; 
+
     [SerializeField]
     private Personaje perj;
 
@@ -30,7 +32,7 @@ public class ScriptDialog : MonoBehaviour
 
     public enum TipoSintoma { A_Calor, B_Flujos, C_Cuerpo, D_Dolor, E_Conducta }
 
-    public enum Enfermedades { CATARRO, SARPULLIDO, RAMAS_BRAZOS, OTITIS, OJOS_CARACOL, LEPRA, BICHOS_OJOS }
+    public enum Enfermedades { NULL, CATARRO, SARPULLIDO, RAMAS_BRAZOS, OTITIS, OJOS_CARACOL, LEPRA, BICHOS_OJOS }
 
     [System.Serializable]
     public struct SintomaData
@@ -47,6 +49,7 @@ public class ScriptDialog : MonoBehaviour
         StartCoroutine(fadeIn());
         textComponent.text = string.Empty;
         GenerarDialogoEnfermedad();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -197,6 +200,9 @@ public class ScriptDialog : MonoBehaviour
         }
         opacity = 0.0f;
         sr.color = new Color(1.0f, 1.0f, 1.0f, opacity);
+
+        textComponent.SetText("");
+        perj.nextNpc(this.gameObject);
         //Hacer que venga el siguiente
     }
     
@@ -227,6 +233,7 @@ public class ScriptDialog : MonoBehaviour
             else {
                 isDialogActive = true;
                 comenzarDialogo();
+                anim.SetTrigger("quitarMascara");
             }
         }
 
@@ -234,6 +241,10 @@ public class ScriptDialog : MonoBehaviour
         {
             ready = false;
             StartCoroutine(fadeOut());
+            if ((int)perj.activeItem == (int)nakim)
+            {
+                perj.dead++;
+            }
         }
     }
 }

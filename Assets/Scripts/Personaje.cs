@@ -26,6 +26,11 @@ public class Personaje : MonoBehaviour
     int maxNpc = 3;
     int npcCount = 0;
 
+    [SerializeField]
+    GameObject prefab;
+
+    public int dead = 0;
+
 
     void Start()
     {
@@ -60,5 +65,15 @@ public class Personaje : MonoBehaviour
 
         activeItem = item;
         armario.hideItem(activeItem);
+    }
+
+    public void nextNpc(GameObject old)
+    {
+        GameObject.Destroy(old);
+
+        GameObject.Instantiate(prefab);
+        npcCount++;
+
+        setActiveItem(Items.NULL);
     }
 }
