@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spritesheet_6
+      name: spritesheet_4
       rect:
         serializedVersion: 2
         x: 451
@@ -163,7 +163,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_3
+      name: spritesheet_6
       rect:
         serializedVersion: 2
         x: 451
@@ -185,10 +185,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_4
+      name: spritesheet_5
       rect:
         serializedVersion: 2
-        x: 2931
+        x: 2939
         y: 3807
         width: 1662
         height: 2637
@@ -207,7 +207,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_5
+      name: spritesheet_3
       rect:
         serializedVersion: 2
         x: 5384
@@ -229,11 +229,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_
+      name: spritesheet_0
       rect:
         serializedVersion: 2
-        x: 451
-        y: 136
+        x: 443
+        y: 153
         width: 1662
         height: 2800
       alignment: 0
@@ -266,15 +266,15 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      spritesheet_: -512482697
+      spritesheet_0: -512482697
       spritesheet_1: 770169778
       spritesheet_11: 216934980
       spritesheet_13: 63100160
       spritesheet_2: -164179274
-      spritesheet_3: -976650878
-      spritesheet_4: -254812811
-      spritesheet_5: 1595489111
-      spritesheet_6: 1116281816
+      spritesheet_3: 1595489111
+      spritesheet_4: 1116281816
+      spritesheet_5: -254812811
+      spritesheet_6: -976650878
       spritesheet_7: -2005174008
       spritesheet_9: 313323765
   mipmapLimitGroupName: 

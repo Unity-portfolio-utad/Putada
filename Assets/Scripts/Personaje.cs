@@ -4,7 +4,7 @@ using Random = UnityEngine.Random;
 
 public class Personaje : MonoBehaviour
 {
-
+    bool locke = false;
     [SerializeField] Armario armario;
     [SerializeField] NightShift nightShift;
 
@@ -58,17 +58,58 @@ public class Personaje : MonoBehaviour
 
             if (nightShift != null)
             {
-                if ((int)item != (int)enfermedad)
+                Debug.Log((int)item + " vs " + (int)enfermedad);
+                if (locke) return;
+                locke = true;
+                // comparación explícita, evitando casteos entre enums distintos
+                bool cures = true;
+                switch (enfermedad)
+                {
+                    case Enfermedad.Enfermedades.CATARRO:
+                        cures = (item == Items.JARABE);
+                        break;
+                    case Enfermedad.Enfermedades.SARPULLIDO:
+                        cures = (item == Items.CREMA);
+                        break;
+                    case Enfermedad.Enfermedades.OTITIS:
+                        cures = (item == Items.LIJAS);
+                        break;
+                    case Enfermedad.Enfermedades.RAMAS_BRAZOS:
+                        cures = (item == Items.SIERRA);
+                        break;
+                    case Enfermedad.Enfermedades.OJOS_CARACOL:
+                        cures = (item == Items.SAL);
+                        break;
+                    case Enfermedad.Enfermedades.LEPRA:
+                        cures = (item == Items.PICO);
+                        break;
+                    case Enfermedad.Enfermedades.BICHOS_OJOS:
+                        cures = (item == Items.CERILLAS);
+                        break;
+                }
+
+                if (!cures)
                 {
                     nightShift.ActivarNightShift(dead, true);
                 }
                 else
                 {
+                    npcCount = 0;
+                    maxNpc += 1;
                     nightShift.ActivarNightShift(dead, false);
-                }
+                    dead = 0;
 
-                npcCount = 0;
-                maxNpc += 1;
+                    // Devolver el objeto a la balda y limpiar el item activo antes de generar el siguiente NPC
+                    if (armario != null)
+                    {
+                        armario.showItem(item);
+                    }
+                    activeItem = Items.NULL;
+
+                    nextNpc(null);
+                    locke = false;
+                    return;
+                }
             }
             else
             {
@@ -77,11 +118,11 @@ public class Personaje : MonoBehaviour
                     this);
             }
         }
-        else if (activeItem != Items.NULL)
+        if (activeItem != Items.NULL)
         {
             armario.showItem(activeItem);
         }
-        else if (activeItem == item)
+        if (activeItem == item)
         {
             armario.showItem(activeItem);
             activeItem = Items.NULL;
@@ -95,33 +136,37 @@ public class Personaje : MonoBehaviour
 
     public void nextNpc(GameObject old)
     {
-        GameObject.Destroy(old);
-
+        if (old != null)
+            GameObject.Destroy(old);
+        
         setActiveItem(Items.NULL);
+
+        
         npcCount++;
         if (npcCount >= maxNpc)
         {
+            if (nightShift == null)
+            {
+                // intentar recuperar una referencia válida en la escena
+                nightShift = FindFirstObjectByType<NightShift>();
+            }
+            nightShift.FastMsg("That was the last one, I should check myself in the mirror...");
             Array v = Enum.GetValues(typeof(Enfermedad.Enfermedades));
             enfermedad = (Enfermedad.Enfermedades)v.GetValue(UnityEngine.Random.Range(1, v.Length));
         }
         else
         {
-            GameObject.Instantiate(prefab);
-
 
             GameObject temp = GameObject.Instantiate(prefab);
-            temp.GetComponent<ScriptDialog>().leve = Random.Range(0, 1) > 0.5;
-            npcCount++;
+            temp.GetComponent<ScriptDialog>().leve = Random.value > 0.5f;
 
-            setActiveItem(Items.NULL);
 
             if (npcCount == maxNpc)
             {
                 Array v = Enum.GetValues(typeof(Enfermedad.Enfermedades));
-                enfermedad = (Enfermedad.Enfermedades)v.GetValue(UnityEngine.Random.Range(1, v.Length));
+                enfermedad = (Enfermedad.Enfermedades)v.GetValue(UnityEngine.Random.Range(1, 7));
 
             }
         }
     }
 }
-

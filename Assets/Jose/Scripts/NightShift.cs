@@ -96,8 +96,8 @@ public class NightShift : MonoBehaviour
 
             //Desactivar canvas
             canvas.SetActive(false);
-        }
-        else
+            textoMuertes.text = "";
+        }else if(deathActivated)
         {
             //Mostrar texto
             textoMuertes.text = "";
@@ -127,7 +127,7 @@ public class NightShift : MonoBehaviour
     //     textoMuertes.text += fullText[i];
     //     yield return new WaitForSeconds(0.1f);
     // }
-    void FastMsg(string msg)
+    public void FastMsg(string msg)
     {
         StartCoroutine(FastMsgCoroutine(msg));
     }
@@ -137,12 +137,12 @@ public class NightShift : MonoBehaviour
         canvasRapido.SetActive(true);
         
         //Fade in
-        float duration = .5f; // Duración del fade
+        float duration = 3f; // Duración del fade
         float currentTime = 0f;
-        CanvasGroup canvasGroup = canvas.GetComponent<CanvasGroup>();
+        CanvasGroup canvasGroup = canvasRapido.GetComponent<CanvasGroup>();
         if (canvasGroup == null)
         {
-            canvasGroup = canvas.AddComponent<CanvasGroup>();
+            canvasGroup = canvasRapido.AddComponent<CanvasGroup>();
 
         }
 
@@ -162,6 +162,7 @@ public class NightShift : MonoBehaviour
             textoRapido.text += fullText[i];
             yield return new WaitForSeconds(0.01f);
         }
+        yield return new WaitForSeconds(3f);
         
         //Fade out
         currentTime = 0f;
@@ -173,7 +174,8 @@ public class NightShift : MonoBehaviour
         }
 
         //Desactivar canvas
-        canvas.SetActive(false);
+        canvasRapido.SetActive(false);
+        textoRapido.text = "";
         
         // coroutine finalizada
         yield break;

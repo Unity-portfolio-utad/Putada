@@ -181,6 +181,7 @@ public class ScriptDialog : MonoBehaviour
     //Vamos a hacer el fade in y fade out con la opacidad del sprite renderer
     IEnumerator fadeIn()
     {
+        yield return new WaitForSeconds(3f);
         SpriteRenderer sr = GetComponent<SpriteRenderer>();
         while (opacity < 1.0f)
         {
