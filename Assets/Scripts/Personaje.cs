@@ -27,7 +27,7 @@ public class Personaje : MonoBehaviour
     [SerializeField] int maxNpc = 3;
     int npcCount = 0;
 
-    [SerializeField] GameObject prefab;
+    [SerializeField] GameObject [] [] prefab ;
 
     public int dead = 0;
 
@@ -157,7 +157,7 @@ public class Personaje : MonoBehaviour
         else
         {
 
-            GameObject temp = GameObject.Instantiate(prefab);
+            GameObject temp = GameObject.Instantiate(prefab[0][Random.Range(0, prefab.Length)]);
             temp.GetComponent<ScriptDialog>().leve = Random.value > 0.5f;
 
 

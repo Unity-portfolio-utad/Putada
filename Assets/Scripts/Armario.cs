@@ -39,6 +39,7 @@ public class Armario : MonoBehaviour
 
 
 
+
             objetos[item].SetActive(false);
         }
     }

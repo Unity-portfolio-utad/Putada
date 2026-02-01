@@ -19,6 +19,7 @@ public class NightShift : MonoBehaviour
     private int nextIndex;
     private bool deathActivated = false;
 
+    public int currentNight; 
 
     private void Start()
     {
@@ -66,6 +67,7 @@ public class NightShift : MonoBehaviour
             //Mostrar texto
             textoMuertes.text = "";
             string fullText = "Patients deceased tonight: " + muertes;
+            currentNight ++;
             for (int i = 0; i < fullText.Length; i++)
             {
                 textoMuertes.text += fullText[i];
