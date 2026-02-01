@@ -3,7 +3,7 @@ using UnityEngine;
 public class PatientController : MonoBehaviour
 {
 
-    private Enfermedad.Enfermedades enfermedad;
+    public Enfermedad.Enfermedades enfermedad;
     
     [SerializeField]
     private ScriptDialog dialog;
