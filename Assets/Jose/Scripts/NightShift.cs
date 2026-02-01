@@ -19,6 +19,7 @@ public class NightShift : MonoBehaviour
     private int currentIndex;
     private int nextIndex;
     private bool deathActivated = false;
+    public int diaActual = 0;
 
 
     private void Start()
@@ -116,6 +117,8 @@ public class NightShift : MonoBehaviour
                 canvasGroup.alpha = 1f - Mathf.Clamp01(currentTime / duration);
                 yield return null;
             }
+            
+            diaActual += 1;
 
             //Desactivar canvas
             canvas.SetActive(false);

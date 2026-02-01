@@ -84,7 +84,18 @@ public class ScriptDialog : MonoBehaviour
         }
         else
         {
-            enfermedadElegida = Enfermedad.graves[UnityEngine.Random.Range(0, Enfermedad.graves.Length)];
+            NightShift nightShift = perj.nightShift;
+            if (nightShift == null)
+            {
+                // intentar recuperar una referencia válida en la escena
+                nightShift = FindFirstObjectByType<NightShift>();
+            }
+            if(nightShift.diaActual == 5)
+            {
+                enfermedadElegida = Enfermedad.Enfermedades.BICHOS_OJOS;
+            }
+            else
+            enfermedadElegida = Enfermedad.graves[UnityEngine.Random.Range(0, Enfermedad.graves.Length-1)];
         }
 
         if (nakim == Enfermedad.Enfermedades.NULL) {

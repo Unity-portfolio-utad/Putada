@@ -6,7 +6,7 @@ public class Personaje : MonoBehaviour
 {
     bool locke = false;
     [SerializeField] Armario armario;
-    [SerializeField] NightShift nightShift;
+    [SerializeField] public NightShift nightShift;
 
     public enum Items
     {
@@ -157,15 +157,44 @@ public class Personaje : MonoBehaviour
         }
         else
         {
-
-           GameObject temp = GameObject.Instantiate(prefab[Random.Range(0, prefab.Length)]);
-            temp.GetComponent<ScriptDialog>().leve = Random.value > 0.5f;
-
+            if (nightShift == null)
+            {
+                // intentar recuperar una referencia válida en la escena
+                nightShift = FindFirstObjectByType<NightShift>();
+            }
 
             if (npcCount == maxNpc)
             {
-                Array v = Enum.GetValues(typeof(Enfermedad.Enfermedades));
-                enfermedad = (Enfermedad.Enfermedades)v.GetValue(UnityEngine.Random.Range(1, 7));
+                //Si el dia es el 1, solo permitir 1 numero en el enumerador de enfermedades
+                if(nightShift.diaActual==1)
+                {
+                    enfermedad = Enfermedad.Enfermedades.CATARRO;
+                }
+                else if(nightShift.diaActual==2)
+                {
+                    Array v = Enum.GetValues(typeof(Enfermedad.Enfermedades));
+                    enfermedad = (Enfermedad.Enfermedades)v.GetValue(UnityEngine.Random.Range(1, 3));
+                }
+                else if(nightShift.diaActual==3)
+                {
+                    Array v = Enum.GetValues(typeof(Enfermedad.Enfermedades));
+                    enfermedad = (Enfermedad.Enfermedades)v.GetValue(UnityEngine.Random.Range(1, 4));
+                }
+                else if (nightShift.diaActual == 4)
+                {
+                    Array v = Enum.GetValues(typeof(Enfermedad.Enfermedades));
+                    enfermedad = (Enfermedad.Enfermedades)v.GetValue(UnityEngine.Random.Range(1, 5));
+                }
+                else if (nightShift.diaActual == 5)
+                {
+                    Array v = Enum.GetValues(typeof(Enfermedad.Enfermedades));
+                    enfermedad = (Enfermedad.Enfermedades)v.GetValue(UnityEngine.Random.Range(1, 7));
+                }
+                else
+                {
+                    Array v = Enum.GetValues(typeof(Enfermedad.Enfermedades));
+                    enfermedad = Enfermedad.Enfermedades.BICHOS_OJOS;
+                }
 
             }
         }
