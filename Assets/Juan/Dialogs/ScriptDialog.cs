@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine.InputSystem;
+using UnityEditor.Animations;
 
 
 public class ScriptDialog : MonoBehaviour
@@ -14,6 +15,9 @@ public class ScriptDialog : MonoBehaviour
     private bool isDialogActive = false;
     public TextMeshPro textComponent;
     public float textSpeed = 0.05f;
+
+    [SerializeField]
+    AnimatorController[] aniControlllers;
 
     public List<SintomaData> baseDeDatosSintomas;
 
@@ -53,6 +57,7 @@ public class ScriptDialog : MonoBehaviour
         textComponent.text = string.Empty;
         GenerarDialogoEnfermedad();
         anim = GetComponent<Animator>();
+        anim.runtimeAnimatorController = aniControlllers[UnityEngine.Random.Range(0, aniControlllers.Length - 1)];
     }
 
     void Update()
