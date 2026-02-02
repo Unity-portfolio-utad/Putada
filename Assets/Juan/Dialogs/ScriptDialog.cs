@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine.InputSystem;
-using UnityEditor.Animations;
+using UnityEngine.Animations;
 
 
 public class ScriptDialog : MonoBehaviour
@@ -17,7 +17,7 @@ public class ScriptDialog : MonoBehaviour
     public float textSpeed = 0.05f;
 
     [SerializeField]
-    AnimatorController[] aniControlllers;
+    RuntimeAnimatorController[] aniControlllers;
 
     public List<SintomaData> baseDeDatosSintomas;
 
@@ -57,7 +57,36 @@ public class ScriptDialog : MonoBehaviour
         textComponent.text = string.Empty;
         GenerarDialogoEnfermedad();
         anim = this.GetComponent<Animator>();
-        anim.runtimeAnimatorController = aniControlllers[UnityEngine.Random.Range(0, aniControlllers.Length)];
+        
+        NightShift nightShift = perj.nightShift;
+        
+        if (nightShift == null)
+        {
+            // intentar recuperar una referencia válida en la escena
+            nightShift = FindFirstObjectByType<NightShift>();
+        }
+        
+        if(nightShift.diaActual == 5)
+        {
+            if (anim.runtimeAnimatorController == null)
+            {
+                anim.runtimeAnimatorController = aniControlllers[0];
+            }
+           anim.runtimeAnimatorController = aniControlllers[aniControlllers.Length-1];
+        }
+        else
+        {
+            if (anim.runtimeAnimatorController == null)
+            {
+                anim.runtimeAnimatorController = aniControlllers[0];
+            }
+             anim.runtimeAnimatorController = aniControlllers[Random.Range(0, aniControlllers.Length-1)];
+             if(anim.runtimeAnimatorController == null || anim.runtimeAnimatorController == aniControlllers[3])
+             {
+                anim.runtimeAnimatorController = aniControlllers[12];
+             }
+            
+        }
         //Clampea el numero a uno dentro del rango
         //anim.runtimeAnimatorController = aniControlllers[Mathf.Clamp((int)nakim - 1, 0, aniControlllers.Length - 1)];
     }
